@@ -1,0 +1,98 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-top: 50px;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table tr td {
+    text-align: center;
+}
+
+table tr th {
+    background-color: rgb(55, 154, 247);
+    color: rgb(255, 255, 255);
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table tr td span.respuesta {
+    display: inline-block;
+    width: 160px;
+    height: 60px;
+    border: 3px solid silver;
+    border-radius: 12px;
+}
+
+.contenedor-palabras {
+    width: fit-content;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+span.palabra {
+    display: inline-block;
+    padding: 4px 8px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin: 0 3px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: white;
+}
+
+span.palabra:hover {
+    border-color: #37D3F7;
+}
+
+@media(max-height: 640px) {
+    .row {
+        display: flex;
+        align-items: center;
+    }
+    .contenedor-ejercicios {
+        padding-top: 0px;
+        margin-left: 5%;
+        width: 60%;
+    }
+    .contenedor-palabras {
+        width: 30%;
+        padding-top: 0;
+        flex-wrap: wrap;
+    }
+    .contenedor-palabras span.palabra {
+        margin: 8px;
+    }
+}

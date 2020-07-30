@@ -1,0 +1,107 @@
+.container-two {
+    margin: 0 auto;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-option {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.pieza {
+    background: orange;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #000;
+    margin: 0.5vh;
+    z-index: 1;
+}
+.campo-image {
+    position: relative;
+}
+.contenedor {
+    background: white !important;
+    border: 2px solid darkred !important;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.p1 {
+    position: absolute;
+    top: -245px;
+    left: -70px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.p2 {
+    position: absolute;
+    top: 180px;
+    left: -10px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.p3 {
+    position: absolute;
+    top: 140px;
+    left: 28px;
+    right: 0;
+    bottom: 0;
+    /* margin: auto; */
+}
+.p4 {
+    position: absolute;
+    top: 215px;
+    left: 299px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.p5 {
+    position: absolute;
+    /* top: 0; */
+    left: 76px;
+    right: 0;
+    bottom: -7px;
+    /* margin: auto; */
+}
+/****** Estilos generales ******/
+
+h5 {
+    width: 80%;
+    font-size: 24px;
+}
+@media (min-width: 1920px) {
+    h5 {
+        font-size: 200%;
+    }
+}
+
+.principal {
+    width: 650px;
+}

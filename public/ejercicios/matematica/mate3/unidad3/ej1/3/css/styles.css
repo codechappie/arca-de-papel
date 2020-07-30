@@ -1,0 +1,89 @@
+/* *TODO: Container */
+
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 72%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+/* *TODO: Grid */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-item, .grid-num {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid silver;
+    padding: 5px;
+    font-size: 28px;
+    text-align: center;
+    margin: .5vh;
+    width: auto;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition: all .4s; */
+    cursor: pointer;
+}
+
+.grid-num {
+    border: none;
+    font-weight: bold;
+    color: tomato;
+}
+
+.grid-item:hover {
+    border-color: #37D3F7;
+    background: #B6ECFF;
+    box-shadow: grey 2px 3px 8px 0px;
+}
+
+/* *TODO: Imagen */
+
+.principal {
+    width: 100%;
+    height: auto;
+}
+
+.img {
+    width: auto;
+    height: 65px;
+}
+
+.img-a {
+    width: auto;
+    height: 24px;
+}
+
+/* *TODO: General */
+
+.text {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.s {
+    color: tomato;
+    font-size: 1em !important;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    font-weight: bold;
+}
+
+.h {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.w {
+    width: 500px;
+}

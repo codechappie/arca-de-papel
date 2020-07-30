@@ -1,0 +1,56 @@
+h5 {
+    width: 85%;
+}
+
+.contenedor-ejercicios {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.contenedor-ejercicios .ejercicio {
+    width: 50%;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.ejercicio .contenedor-img {
+    width: 100%;
+    text-align: center;
+}
+
+.ejercicio .contenedor-img img {
+    max-width: 130px;
+    max-height: 130px;
+}
+
+.ejercicio span {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.ejercicio select {
+    margin-top: 20px;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicios {
+        width: 90%;
+        padding-top: 30px;
+    }
+    .contenedor-ejercicios .ejercicio {
+        width: 25%;
+    }
+    .contenedor-ejercicios .ejercicio {
+        padding: 5px 0;
+    }
+    .ejercicio span {
+        font-size: 1.6rem;
+    }
+    .ejercicio select {
+        margin-top: 10px;
+    }
+}

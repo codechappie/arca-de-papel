@@ -1,0 +1,82 @@
+    h4 {
+        text-align: center;
+    }
+    
+    h5 {
+        width: 85%;
+    }
+    
+    .container {
+        display: flex;
+        height: 70%;
+        align-items: center;
+    }
+    
+    .container .row {
+        width: 100%;
+    }
+    
+    .contenedor-ejercicio {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+    /**********************/
+    
+    ul.alfabeto {
+        display: inline-flex;
+        padding: 18px 15px 18px 15px;
+        background-color: #52cff5;
+    }
+    
+    ul.alfabeto li {
+        border: 3px dashed white;
+        background-color: #45b9e7;
+        color: white;
+        margin: 8px;
+        padding: 15px;
+    }
+    
+    ul.alfabeto.uno {
+        background-color: #4de955;
+    }
+    
+    ul.alfabeto.uno li {
+        background-color: #2dc942;
+    }
+    
+    ul.alfabeto.dos {
+        background-color: rgb(235, 181, 33);
+    }
+    
+    ul.alfabeto.dos li {
+        background-color: tomato;
+    }
+    
+    ul.alfabeto.tres {
+        background-color: rgb(183, 43, 196);
+    }
+    
+    ul.alfabeto.tres li {
+        background-color: rgb(181, 71, 255);
+    }
+    
+    ul.alfabeto li span {
+        font-size: 1.8rem;
+        line-height: .5rem;
+        font-weight: 700;
+    }
+    /*******************/
+    
+    @media(max-height: 640px) {
+        ul.alfabeto {
+            margin: 8px;
+            padding: 8px 8px 8px 8px;
+        }
+        ul.alfabeto li {
+            padding: 7px 7px;
+        }
+        ul.alfabeto li span {
+            font-size: 1.5rem;
+        }
+    }

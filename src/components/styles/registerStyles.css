@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none!important;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 350;
+    -webkit-tap-highlight-color: transparent;
+}
+/*COLORS SET-UP*/
+.violet {
+    background: indigo;
+}
+.green {
+    background: #00b118;
+}
+/*COLORS SET-UP*/
+
+/* body{
+    overflow-x: hidden;
+} */
+
+.register-section{
+    width: 100vw;
+    margin: 0;
+    height: 100%;
+    background-image: url("../../images/illustration.png");
+    background-position: -5% top;
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
+}
+
+nav{
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px;
+    position: relative;
+}
+.companyName img{
+    width: 180px;
+    text-align: center;
+}
+
+.title-type-user{
+    margin-bottom: 10px;
+    font-family: 'RalewaySemiBold';
+    color: #2E2D81;
+}
+
+/*CHANGE USER*/
+.change-user{
+    margin-bottom: 20px;
+    display: flex;
+}
+.change-user button{
+    height: 40px;
+    width: 120px;
+    margin: 0px 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ffffff;
+    color: rgb(22, 137, 231);
+    box-shadow: 1px 1px 3px rgba(70, 70, 70, 0.411);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 15px 14px 10px 14px ;
+    cursor: pointer;
+    font-family: JosefinaSans;
+    text-transform: uppercase;
+    font-size: .7rem;
+    transition: background .2s ease-in-out;
+}
+.change-user button:hover{
+    background-color: rgb(27, 125, 236);
+    color: #FFF;
+    transition: background .2s ease-in-out;
+}
+.change-user .active{
+    background-color: rgb(27, 125, 236);
+    color: #FFF;
+    transition: background .2s ease-in-out;
+}
+.change-user button i {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;    
+}
+
+
+/*REGISTER*/
+.register-container{
+    background-color: transparent;
+    width: 48vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.form-container{
+    display: grid;
+    justify-items: center;
+}
+.registro-form .form-group i{
+    top: 15px;
+    font-size: 1rem;
+}
+.image-user img{
+    width: 100px;
+    margin-bottom: 15px;
+}
+form{
+    display: grid;
+    justify-items: center;
+}
+
+/*ERROR*/
+.alert-error{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c80a0a;
+    color: #FFF;
+    width: 100%;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-family: 'JosefinaSans';
+    transition: display 5s ease-in-out;
+}
+.alert-error button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.alert-error i{
+    color: #FFF;
+}
+
+.register-container form input{
+    width: 300px;
+    padding: 10px 20px;
+    padding-right: 44px;
+    margin: 4px 0px;
+    border-radius: 100px;
+    border: none;
+    background: #E6E7E8;
+    font-size: 1rem;
+    font-family: 'JosefinaSans';
+    text-transform: none;
+}
+form input::placeholder{
+    color: #2a2a2a;
+}
+.form-group{
+    position: relative;
+}
+.form-group i{
+    position: absolute;
+    font-size: 1.6rem;
+    right: 12px;
+    top: 8px;
+    color: #3b3b3b;
+}
+.remenber-me{
+    margin-top: 14px;
+    margin-bottom: 30px;
+    font-size: .9rem;
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+/**CHECKBOX*/
+.checkboxes{
+    border: none;
+    padding: 10px 0px;
+}
+
+/* Hide the default checkbox */
+.custom-sq input[type=checkbox] {
+    display: none;
+  }
+  
+  /* Draw our custom check box */
+  .custom-sq {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0px 6px;
+    display: inline-block;
+  }
+  .custom-sq label {
+    cursor: pointer;
+    font-family: JosefinaSans;
+  }
+  .custom-sq label:before {
+    display: inline-block;
+    width: 20px;
+    margin-right: 5px;
+    content: "\00a0";
+    text-align: center;
+    background: #eee;
+  }
+  .custom-sq label:hover::before{
+    background: #aaa;
+  }
+  
+  /* On check */
+  .custom-sq input:checked ~ label:before {
+    content: "\2713";
+    background: #7950AE;
+    color: #fff;
+  }
+
+/*CHECKBOX*/
+
+
+
+
+.btn-register{
+    font-size: 1.2rem;
+    background-color: #7950AE;
+    color: #FFF;
+    font-family: 'JosefinaSans';
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.no-account{
+    font-size: .9rem;
+    text-decoration: none;
+    color: #5a5a5a;
+    margin-bottom: 5px;
+    font-family: JosefinaSans;
+}
+.create-account{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #EE2A7B;
+    font-family: JosefinaSans;
+}
+
+/*Media*/
+
+@media screen and (max-width: 1124px){
+    .register-container{
+        background: #ffffff;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .register-section{
+        background: rgb(255, 255, 255);
+     }
+   nav{
+        position: relative;
+        width: 100vw;
+        height: 70px;
+        z-index: 9;
+        justify-content: center;
+        background: #fff;
+    }
+    .companyName img{
+        width: 100px;
+    }
+    .register-container{
+        padding-top: 90px;
+        padding-bottom: 30px;
+        width: 100vw;
+        height: auto;
+        background: #ffffff;
+    }
+    .image-user img {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+    form input {
+        width: 300px;
+        padding: 12px 16px;
+        padding-right: 40px;
+        border-radius: 100px;
+        background: #E6E7E8;
+    }
+    .form-group i{
+        position: absolute;
+        font-size: 1.4rem;
+        right: 20px;
+        top: 20px;
+        color: #3b3b3b;
+    }
+}

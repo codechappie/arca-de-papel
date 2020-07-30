@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arca de Papel</title>
+  <!-- CSS  -->
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://plataforma.arcadepapel.net/css/materialize.css" type="text/css" rel="stylesheet"
+    media="screen,projection" />
+  <link rel="stylesheet" href="https://plataforma.arcadepapel.net/css/core.css">
+  <link rel="stylesheet" type="text/css" href="https://plataforma.arcadepapel.net/view/comunicacion/1/unidad.css">
+  <link rel="stylesheet" href="https://plataforma.arcadepapel.net/js/ui/jquery-ui.min.css">
+  <script src="https://plataforma.arcadepapel.net/js/jquery-3.4.1.min.js"></script>
+  <script src="https://plataforma.arcadepapel.net/js/ui/jquery-ui.min.js"></script>
+  <script src="https://plataforma.arcadepapel.net/js//ui/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+  <script type="text/javascript">
+    var count = 3;
+  </script>
+  <link rel="stylesheet" href="https://plataforma.arcadepapel.net/view/comunicacion/1/0/1/css/force-lastcape.css">
+</head>
+<div style="transform: translate(0vw, -13vh);
+  color: white;" id="resolucion"></div>
+<img class="logoUnidad">
+<script>$('.logoUnidad').attr("src", "https://plataforma.arcadepapel.net/img/unidades/2.png");</script>
+
+<body>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <audio id="click" src="https://plataforma.arcadepapel.net/asset/cursor/sound/click.mp3"></audio>
+  <audio id="bien" src="https://plataforma.arcadepapel.net/view/tools/sound/bien.mp3">
+  </audio>
+  <audio id="fallo" src="https://plataforma.arcadepapel.net/view/tools/sound/fallo.mp3">
+  </audio>
+  <div id="vertical"></div>
+  <div class="ftitle" id="ftitle"></div>
+  <!-- REMPLAZAMOS ESTE FRAGMENTO POR EL EJERCICIO CORRESPONDIENTE -->
+  <div class="container-two">
+    <div class="caja">
+      <div class="tabla">
+        <div class="grid-container aleatorio">
+          <div class="grid-item">
+            <select class="slc" id="slc1" alt="954">
+              <option value="" disabled selected></option>
+              <option value="953">953</option>
+              <option value="954">954</option>
+              <option value="955">952</option>
+              <option value="956">951</option>
+              <option value="957">950</option>
+            </select>
+            >
+            953
+          </div>
+          <div class="grid-item">
+            <select class="slc" id="slc1" alt="826">
+              <option value="" disabled selected></option>
+              <option value="822">830</option>
+              <option value="823">829</option>
+              <option value="824">828</option>
+              <option value="825">827</option>
+              <option value="826">826</option>
+            </select>
+            < 827 </div>
+              <div class="grid-item">
+                <select class="slc" id="slc1" alt="633">
+                  <option value="" disabled selected></option>
+                  <option value="631">629</option>
+                  <option value="632">630</option>
+                  <option value="633">633</option>
+                  <option value="634">632</option>
+                  <option value="635">631</option>
+                </select>
+                > 632
+              </div>
+              <div class="grid-item">
+                684 >
+                <select class="slc" id="slc1" alt="683">
+                  <option value="" disabled selected></option>
+                  <option value="681">687</option>
+                  <option value="682">686</option>
+                  <option value="683">683</option>
+                  <option value="684">684</option>
+                  <option value="685">685</option>
+                </select>
+              </div>
+              <div class="grid-item">
+                623 < <select class="slc" id="slc1" alt="624">
+                  <option value="" disabled selected></option>
+                  <option value="">629</option>
+                  <option value="">628</option>
+                  <option value="">627</option>
+                  <option value="">626</option>
+                  <option value="625">625</option>
+                  </select>
+              </div>
+              <div class="grid-item">
+                <select class="slc" id="slc1" alt="622">
+                  <option value="" disabled selected></option>
+                  <option value="626">626</option>
+                  <option value="622">622</option>
+                  <option value="623">623</option>
+                  <option value="624">624</option>
+                  <option value="625">625</option>
+                </select>
+                < 623 </div>
+                  <div class="grid-item">
+                    <select class="slc" id="slc1" alt="720">
+                      <option value="" disabled selected></option>
+                      <option value="720">720</option>
+                      <option value="721">719</option>
+                      <option value="722">718</option>
+                      <option value="723">717</option>
+                      <option value="724">716</option>
+                    </select>
+                    > 719
+                  </div>
+                  <div class="grid-item">
+                    767 =
+                    <select class="slc" id="slc1" alt="767">
+                      <option value="" disabled selected></option>
+                      <option value="763">763</option>
+                      <option value="764">764</option>
+                      <option value="765">765</option>
+                      <option value="766">766</option>
+                      <option value="767">767</option>
+                    </select>
+                  </div>
+                  <div class="grid-item">
+                    657 < <select class="slc" id="slc1" alt="658">
+                      <option value="" disabled selected></option>
+                      <option value="654">654</option>
+                      <option value="655">655</option>
+                      <option value="656">656</option>
+                      <option value="657">657</option>
+                      <option value="658">658</option>
+                      </select>
+                  </div>
+                  <div class="grid-item">
+                    515 < <select class="slc" id="slc1" alt="516">
+                      <option value="" disabled selected></option>
+                      <option value="512">512</option>
+                      <option value="513">513</option>
+                      <option value="514">514</option>
+                      <option value="515">515</option>
+                      <option value="516">516</option>
+                      </select>
+                  </div>
+                  <div class="grid-item">
+                    <select class="slc" id="slc1" alt="529">
+                      <option value="" disabled selected></option>
+                      <option value="525">525</option>
+                      <option value="526">526</option>
+                      <option value="527">527</option>
+                      <option value="528">528</option>
+                      <option value="529">529</option>
+                    </select>
+                    > 528
+                  </div>
+                  <div class="grid-item">
+                    <select class="slc" id="slc1" alt="995">
+                      <option value="" disabled selected></option>
+                      <option value="991">991</option>
+                      <option value="992">992</option>
+                      <option value="993">993</option>
+                      <option value="994">994</option>
+                      <option value="995">995</option>
+                    </select>
+                    = 995
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- REMPLAZAMOS ESTE FRAGMENTO POR EL EJERCICIO CORRESPONDIENTE -->
+
+
+      </section>
+      <div id="modal1" style="display: none;" class="modal">
+        <div class="modal-content">
+          <h4>Respuesta correcta</h4>
+          <center>
+            <img class="materialboxed" width="80%" src="./img/respuesta.png">
+          </center>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+        </div>
+      </div>
+      <div id="ventana"></div>
+      <div id="correcto" class="modal">
+        <div class="modal-content">
+          <center>
+            <h4>Respuesta correcta <i class="material-icons">sentiment_very_satisfied</i></h4>
+          </center>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-close waves-effect waves-green btn-flat">Listo!</a>
+        </div>
+      </div>
+      <div id="incorrecto" class="modal">
+        <div class="modal-content">
+          <center>
+            <h4>Respuesta Incorrecta <i class="material-icons">sentiment_very_dissatisfied</i></h4>
+          </center>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+        </div>
+      </div>
+      <script src="https://plataforma.arcadepapel.net/js/materialize.min.js"></script>
+      <script src="https://plataforma.arcadepapel.net/js/core.js"></script>
+      <center>
+        <div class="botones">
+          <a title="Ver Respuesta" class="modal-trigger tooltipped" href="#modal1">
+            <div class="btn red pulse btn-floating fixed-action-btn tooltipped" data-position="left"
+              data-tooltip="Ver Respuesta Correcta" id="respuesta">
+              <i class="material-icons">assignment_turned_in</i></div>
+          </a>
+          <div class="btn  btn-floating  btn-small  btn-intentos tooltipped" data-position="top"
+            data-tooltip="Intentos restantes" id="intentos">3</div>
+          <div class="btnEnviar btn-small center" value="" id="boton1" onclick="">Enviar Respuesta</div>
+          <div class="btnCorregir btn-small center" value="" onclick="window.location.reload()">Reiniciar</div>
+          <a class="btn-small btnSiguiente center disabled" id="nextExercise" href="">Siguiente</a>
+        </div>
+      </center>
+
+      <script src="./js/validate.js"></script>
+</body>
+
+</html>

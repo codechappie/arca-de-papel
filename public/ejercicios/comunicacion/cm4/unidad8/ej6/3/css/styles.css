@@ -1,0 +1,118 @@
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.ejercicio {
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.ejercicio .ejercicio-item {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.ejercicio-item .palabras {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.palabras ul li {
+    border-bottom: 2px solid white;
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding: 7px;
+    padding-right: 10px;
+}
+
+.ejercicio-item.amarillo .palabras ul li {
+    padding-right: 32px;
+}
+
+.ejercicio-item.rosa {
+    background-color: #ffcccc;
+}
+
+.ejercicio-item.celeste {
+    background-color: #99ccff;
+}
+
+.ejercicio-item.amarillo {
+    background-color: #fc6;
+}
+
+.ejercicio-item.verde {
+    background-color: #3cc;
+}
+
+.ejercicio-item .semantico {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.ejercicio-item p {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+span select {
+    color: rgb(29, 131, 214);
+    text-align: center;
+}
+
+span select option {
+    text-align: center;
+}
+
+span.selectx {
+    display: inline-flex;
+    width: 250px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicios {
+        width: 90%;
+        padding-top: 0px;
+    }
+    .ejercicio-item p {
+        font-size: 1.5rem;
+    }
+    .palabras ul li {
+        padding: 3px;
+        padding-right: 10px;
+        font-size: 1.3rem;
+    }
+    .ejercicio-item .palabras {
+        padding: 1px 15px;
+    }
+    .semantico p {
+        margin: 0;
+    }
+}

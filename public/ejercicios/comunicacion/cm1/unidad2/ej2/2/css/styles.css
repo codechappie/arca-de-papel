@@ -1,0 +1,78 @@
+.svg{
+    width: 850px;
+}
+.colores img{
+  width: 50px;
+  margin: 2vh;
+  border-radius: 18%;
+}
+#contenedorpuzzle{
+width: 80%;
+margin: 10vh auto;
+}
+.item img{
+  width: 250px ;
+  margin: 3 20px 0;
+  float: left;
+  border:solid transparent;           
+}
+.item img:hover{
+border:solid;
+}   
+h5 {
+font-size: 200%;
+}
+.img-principal{
+  margin: 5vh auto 0;
+}
+.fila1, .fila2, .fila3{
+  margin: 0 auto 2vh;
+  width: 1160px;
+  box-shadow: 0 0 5px #80808061;
+}
+.container, .content-wrapper{
+    margin: 3vh auto 0;
+}
+.fila1 img{
+  width: 20vw;
+  margin:0 auto;
+}
+
+@media (max-width: 1200px){
+  .container, .content-wrapper{
+    margin: 42px auto 0;
+}
+}
+
+#imgIzquierda li, #imgDerecha li{
+    width: 170px;
+    height: 105px;
+    border: 1px solid silver;
+    position: relative;
+    padding: 5px 0px;
+    float: left;
+}
+#imgIzquierda li:hover,  #imgDerecha li:hover{
+    background-color: silver;
+}
+
+#imgIzquierda img, #imgDerecha img{
+     width: 100px;
+      max-height: 95px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+ 
+
+}
+.campo{
+  float: left;
+}
+ul{
+  margin: 0;
+}
+.b span{
+  font-size: 30px;
+  line-height: 80px;
+  font-weight: 600;
+}

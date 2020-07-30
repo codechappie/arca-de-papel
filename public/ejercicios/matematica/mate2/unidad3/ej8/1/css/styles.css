@@ -1,0 +1,102 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 80%;
+    height: 70%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+::-webkit-scrollbar {
+    -webkit-border-radius: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    height: 10px;
+    -webkit-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+    width: 0px;
+}
+.caja{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+.problema .fila{
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    justify-items: center;
+}
+.numero{
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+}
+.flechas{
+    color: red;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+.smalerBox  input.select-dropdown {
+    border: 1px solid silver;
+    width: 50px;
+    margin: 12px 0px;
+    font-weight: 600;
+    font-size: 24px;
+    height: 40px;
+  }
+
+
+
+
+
+
+/*SELECT*/
+.select-wrapper input.select-dropdown {
+    border: 1px solid silver;
+    width: 70px;
+    margin: 12px 0px;
+    font-weight: 600;
+    font-size: 24px;
+    height: 40px;
+  }
+  
+  .select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid silver;
+  }
+  
+  .select-wrapper ul {
+    height: auto;
+  }
+  
+  .select-wrapper {
+    position: relative;
+    margin-left: .5vh;
+    margin-right: .5vh;
+  }
+  
+  .dropdown-content {
+    background-color: #fff;
+    margin: 0;
+    display: none;
+    min-width: 70px;
+    overflow-y: auto;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    width: 70px;
+    border-radius: 12px;
+  }

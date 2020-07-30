@@ -1,0 +1,38 @@
+h4 {
+    text-align: center;
+}
+
+.contenedor-oraciones, .contenedor-oraciones2 {
+    width: 60%;
+    padding-top: 30px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+@media (min-width: 1920px) {
+    .contenedor-oraciones, .contenedor-oraciones2 {
+        width: 50%;
+    } 
+}
+
+.oracion {
+    width: 40%;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin: 15px;
+    padding: 5px 15px;
+}
+
+.oracion:hover {
+    border-color: #37D3F7;
+}
+
+.oracion span {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+img.img {
+    width: auto;
+    height: 180px;
+}

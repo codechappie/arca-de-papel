@@ -1,0 +1,107 @@
+h4 {
+    text-align: center;
+}
+
+.row {
+    text-align: center;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.row-img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.contenedor-ejercicios {
+    width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    justify-items: left;
+}
+
+.letrax {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: auto;
+    justify-content: left;
+    overflow: hidden;
+    transition: all 1s ease;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.letra:hover {
+    width: auto;
+}
+
+.letra:hover .guion {
+    display: flex;
+}
+
+.letrax span {
+    display: block;
+    width: auto;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.trax span{
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+.guion {
+    display: flex;
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+    font-weight: bold;
+    color: red;
+}
+.rojo{
+    color: red;
+    font-weight: 700;
+
+}
+.letra .guion {
+    display: none;
+}
+.spacio{
+    margin-right: 70px;
+}
+
+/************/
+
+
+/**************/
+
+@media(max-height: 950px) {
+    .contenedor-ejercicios {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 10px;
+    }
+}
+@media(max-height: 660px) {
+    .row{
+        padding-top: 22px;
+    }
+    .contenedor-ejercicios span{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 0px;
+        font-size: 1.4rem;
+    }
+}

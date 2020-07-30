@@ -1,0 +1,113 @@
+.caja-principal {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    height: 100%;
+    padding: 0;
+}
+.content{
+    display: grid;
+    height: 50%;
+    align-items: center;
+    justify-items: center;
+}
+.column{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 5px;
+    padding: 10px;
+}
+.imagen {
+    text-align: center;
+}
+.imagen img{
+    height: 130px;
+}
+.problems{
+    display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+}
+.problem{
+    width: 90%;
+    margin: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 10px;
+    border-radius: 6px;
+    display: grid;
+    justify-items: center;
+}
+.descripcion span{
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+    
+}
+@media screen and (max-width: 1300px){
+  .imagen img{
+    height: 80px;
+  }
+}
+
+
+
+
+
+
+
+/*SELECT*/
+.select-wrapper input.select-dropdown {
+    border: 1px solid rgb(85, 83, 83);
+    width: 40px;
+    margin: 12px 0px;
+    font-weight: 400;
+    font-size: 24px;
+    height: 40px;
+  }
+  .select-wrapper .caret{
+      display: none;
+  }
+  .select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid silver;
+  }
+  
+  .select-wrapper ul {
+    height: auto;
+  }
+  
+  .select-wrapper {
+    position: relative;
+    margin-left: .5vh;
+    margin-right: .5vh;
+  }
+  
+  .dropdown-content {
+    background-color: #fff;
+    margin: 0;
+    display: none;
+    min-width: 20px;
+    overflow-y: auto;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    width: 10px;
+    border-radius: 12px;
+  }
+  @media screen and (max-width: 1300px){
+    .caja-principal {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 80%;
+    }
+  }

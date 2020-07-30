@@ -1,0 +1,64 @@
+h5 {
+    width: 80%;
+}
+
+.container {
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-ejercicios {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.contenedor-img {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin: 15px;
+}
+
+.contenedor-img img {
+    max-width: 95%;
+    max-height: 95%;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicios {
+        grid-template-columns: auto auto auto auto;
+    }
+    .contenedor-img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.grid-pregunta {
+    margin: 5vh;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/****** Estilos generales ******/
+
+.s {
+    color: tomato;
+    font-weight: bold;
+    margin-right: 1vh;
+}
+
+.text {
+    font-size: 24px;
+}

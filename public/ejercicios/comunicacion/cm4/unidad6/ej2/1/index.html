@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arca de Papel</title>
+  <!-- CSS  -->
+  <style type="text/css">
+    h4 {
+        text-align: center;
+    }
+    
+    #listA {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #palabras {
+        padding: 50px;
+    }
+    
+    #palabras li {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2vh;
+        margin-right: 1px;
+    }
+    
+    @media (min-width: 600px) {
+        #palabras li {
+            width: 40%;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        #palabras li {
+            width: 20%;
+        }
+    }
+    .muestra {
+        width: 100px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    .box img {
+        width: 50%;
+        height: auto;
+    }
+    
+    .box:hover {
+        border: 3px solid #37D3F7;
+    }
+  </style>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://plataforma.arcadepapel.net/css/materialize.css" type="text/css" rel="stylesheet"
+    media="screen,projection" />
+  <link rel="stylesheet" href="https://plataforma.arcadepapel.net/css/core.css">
+  <link rel="stylesheet" type="text/css" href="https://plataforma.arcadepapel.net/view/comunicacion/1/unidad.css">
+  <link rel="stylesheet" href="https://plataforma.arcadepapel.net/js/ui/jquery-ui.min.css">
+  <script src="https://plataforma.arcadepapel.net/js/jquery-3.4.1.min.js"></script>
+  <script src="https://plataforma.arcadepapel.net/js/ui/jquery-ui.min.js"></script>
+  <script src="https://plataforma.arcadepapel.net/js//ui/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+  <style type="text/css">
+    .ftitle {
+      font-size: 1rem;
+      padding-top: 30px;
+    }
+
+    .ftitulo span {
+      color: #0095DA !important;
+    }
+  </style>
+  <script type="text/javascript">
+    var count = 3;
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://plataforma.arcadepapel.net/view/comunicacion/1/0/1/css/force-lastcape.css">
+</head>
+<div style="transform: translate(0vw, -13vh);
+  color: white;" id="resolucion"></div>
+<img class="logoUnidad">
+<script>$('.logoUnidad').attr("src", "https://plataforma.arcadepapel.net/img/unidades/5.png");</script>
+
+<body>
+
+  <audio id="click" src="https://plataforma.arcadepapel.net/asset/cursor/sound/click.mp3"></audio>
+  <audio id="bien" src="https://plataforma.arcadepapel.net/view/tools/sound/bien.mp3">
+  </audio>
+  <audio id="fallo" src="https://plataforma.arcadepapel.net/view/tools/sound/fallo.mp3">
+  </audio>
+  <div id="vertical"></div>
+   
+
+  <div class="ftitle" id="ftitle"></div>
+  <!-- REMPLAZAMOS ESTE FRAGMENTO POR EL EJERCICIO CORRESPONDIENTE -->
+  
+  
+  <div class="container">
+
+    <div class="row">
+        <div class="col s12">
+            <ul id="tabs-swipe-demo" class="tabs">
+                <li class="tab col s4 activo"><a class="active" href="#test-swipe-1">Parte 1</a></li>
+                <li class="tab col s4"><a href="#test-swipe-2">Parte 2</a></li>
+                <li class="tab col s4"><a href="#test-swipe-3">Parte 3</a></li>
+
+            </ul>
+        </div>
+        <div id="test-swipe-1" class="col s12 lectura-img">
+            <div class="container-cuento">
+                <div class="lectura">
+                    <h5>El alacrán de Fray Gómez</h5>
+                    <p>
+                        Era un lego de Juan de la Pipirindica y de San Francisco Solano. Era refitolero en el
+                        hospital de los frailes y el pueblo y la tradición lo recuerdan por Fray Gómez.
+                        Fray Gómez hizo en mi tierra milagros a mantas, sin darse cuenta de ellos y como quien no
+                        quiere la cosa.
+                    </p>
+                    <p>
+                        Estaba una mañana en su celda, entregado a la meditación, cuando dieron a la puerta unos
+                        golpecitos. <br>
+                        —Entre, hermanito — autorizó Fray Gómez. <br>
+                        Y entró un individuo algo desarrapado, delatando pobrezas, pero con la proverbial honradez
+                        del castellano viejo. <br>
+                        —Tome asiento, hermano, y dígame lo que por acá le trae — dijo Fray Gómez. <br>
+                    </p>
+
+                </div>
+                <div class="img">
+                    <img src="<?=$dir?>/img/1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="test-swipe-2" class="col s12 lectura-img">
+            <div class="container-cuento">
+                <div class="lectura">
+                    <h5>El alacrán de Fray Gómez</h5>
+                    <p>
+                        —Padre, soy hombre de bien —dijo—. Trabajo de buhonero, pero mi negocio no cunde por falta
+                        de quinientos duros. Las puertas se me han cerrado —añadió—, por eso le ruego que me los
+                        preste por seis meses. Tengo fe de que lo hará. <br>
+                        —La fe lo salvará, hermano. Espere un momento.
+                        Paseando los ojos por las paredes, vio un alacrán que andaba por la ventana, lo cogió, lo
+                        envolvió y dándoselo, le dijo: <br>
+                        —Tome buen hombre, y empeñe esta alhajita, pero solo por seis meses. <br>
+                        Se deshizo en agradecimientos y corrió donde el usurero. El alacrán era una alhaja: una
+                        esmeralda engarzada sobre oro, y la cabeza un grueso brillante con dos rubíes por ojos.
+                        El usurero, gran conocedor, la vio con codicia y le ofreció dos mil duros; pero el buhonero
+                        solo aceptó los quinientos por seis meses, más el interés judaico.
+                    </p>
+
+
+                </div>
+                <div class="img">
+                    <img src="<?=$dir?>/img/1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="test-swipe-3" class="col s12 lectura-img">
+            <div class="container-cuento">
+                <div class="lectura">
+                    <h5>El alacrán de Fray Gómez</h5>
+                    <p>
+
+                        Firmaron papeletas, acariciando el agiotista la esperanza de que podía ser suya.
+                        Pero fuele tan bien al buhonero, que cumplido el plazo desempeñó la prenda y, envuelta
+                        igual, se la devolvió a Fray Gómez. Este la tomó, la puso en la ventana y la bendijo,
+                        diciendo:
+                    </p>
+                    <p>
+                        —Animalito de Dios, sigue tu camino. <br>
+                        Y el alacrán echó a andar libremente por las paredes de la celda.
+                    </p>
+                    <p style="text-align: right;font-weight: 600; color: #1b92de;">
+                        Ricardo Palma. En Tradiciones peruanas. <br>
+                        (Adaptación)
+                    </p>
+
+
+                </div>
+                <div class="img">
+                    <img src="./img/1.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+  
+
+  <!-- REMPLAZAMOS ESTE FRAGMENTO POR EL EJERCICIO CORRESPONDIENTE -->
+
+
+  </section>
+  <div id="modal1" style="display: none;" class="modal">
+    <div class="modal-content">
+      <h4>Respuesta correcta</h4>
+      <center>
+        <img class="materialboxed" width="80%" src="./img/respuesta.png">
+      </center>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+    </div>
+  </div>
+  <div id="ventana"></div>
+  <div id="correcto" class="modal">
+    <div class="modal-content">
+      <center>
+        <h4>Respuesta correcta <i class="material-icons">sentiment_very_satisfied</i></h4>
+      </center>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-close waves-effect waves-green btn-flat">Listo!</a>
+    </div>
+  </div>
+  <div id="incorrecto" class="modal">
+    <div class="modal-content">
+      <center>
+        <h4>Respuesta Incorrecta <i class="material-icons">sentiment_very_dissatisfied</i></h4>
+      </center>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+    </div>
+  </div>
+  <script src="https://plataforma.arcadepapel.net/js/materialize.min.js"></script>
+  <script src="https://plataforma.arcadepapel.net/js/core.js"></script>
+  <center>
+    <div class="botones">
+      <a title="Ver Respuesta" class="modal-trigger tooltipped" href="#modal1">
+        <div class="btn red pulse btn-floating fixed-action-btn tooltipped" data-position="left"
+          data-tooltip="Ver Respuesta Correcta" id="respuesta">
+          <i class="material-icons">assignment_turned_in</i></div>
+      </a>
+      <div class="btn  btn-floating  btn-small  btn-intentos tooltipped" data-position="top"
+        data-tooltip="Intentos restantes" id="intentos">3</div>
+      <div class="btnEnviar btn-small center" value="" id="boton1" onclick="">Enviar Respuesta</div>
+      <div class="btnCorregir btn-small center" value="" onclick="window.location.reload()">Reiniciar</div>
+      <a class="btn-small btnSiguiente center disabled" id="nextExercise" href="">Siguiente</a>
+    </div>
+  </center>
+
+  <script src="./js/validate.js"></script>
+  <script>
+    $(document).ready(function() {
+        $('.tabs').tabs();
+    });
+    
+    $(".tab").click(function() {
+        $(this).addClass("activo");
+    });
+    </script>
+    <script src="../../../../../js/core.js"></script>
+   
+    <script type="text/javascript">
+    $(".btn-intentos").hide();
+    $(".btnEnviar").hide();
+    $(".btnCorregir").hide();
+    $(".btnSiguiente").removeClass("disabled");
+    </script>
+</body>
+
+</html>

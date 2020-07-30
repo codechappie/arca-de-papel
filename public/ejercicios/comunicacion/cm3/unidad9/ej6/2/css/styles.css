@@ -1,0 +1,90 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicio {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-imagen {
+    width: 50%;
+    text-align: center;
+}
+
+.contenedor-imagen img {
+    max-width: 100%;
+    max-height: 55vh;
+    margin: auto;
+}
+
+.ejercicio {
+    width: 50%;
+}
+
+.ejercicio .contenedor-respuesta p {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.ejercicio .contenedor-respuesta p span {
+    display: inline-block;
+    width: 180px;
+    height: 58px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    color: transparent;
+}
+
+.ejercicio .contenedor-palabras {
+    width: fit-content;
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+}
+
+span.palabrax {
+    display: inline-block;
+    padding: 2px 7px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin: 3px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    background-color: white;
+}
+
+@media(max-height: 640px) {
+    .ejercicio .contenedor-palabras {
+        padding-top: 20px;
+    }
+    .ejercicio .contenedor-respuesta {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ejercicio .contenedor-respuesta p {
+        width: fit-content;
+        margin: 10px;
+    }
+    .contenedor-palabras span.palabrax {
+        font-size: 1.4rem;
+    }
+}

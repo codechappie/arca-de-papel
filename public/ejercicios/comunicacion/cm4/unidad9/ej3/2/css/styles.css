@@ -1,0 +1,87 @@
+h5 {
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 80%;
+}
+
+.contenedor-tabla {
+    width: 70%;
+    margin: auto;
+}
+
+table,
+tr,
+td,
+th {
+    text-align: center;
+    border-radius: 0;
+}
+
+table tr th {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+td {
+    font-size: 1.5rem;
+}
+
+span select {
+    color: rgb(29, 131, 214);
+    text-align: center;
+}
+
+span select option {
+    text-align: center;
+}
+
+p span {
+    color: tomato;
+    font-weight: 700;
+}
+
+p span.selectx {
+    display: inline-flex;
+    width: 100px;
+}
+
+.imagen-lectura {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.imagen-lectura img {
+    max-height: 600px;
+    margin: 0 auto;
+}
+
+@media(max-height: 640px) {
+    h5 {
+        font-size: 150%;
+    }
+    .container .row {
+        width: 90%;
+    }
+    table td {
+        padding: 5px 15px;
+        font-size: 18px;
+    }
+    .tabs {
+        height: 30px;
+    }
+    .tabs .tab {
+        height: 30px;
+        line-height: 30px;
+    }
+    .imagen-lectura img {
+        max-height: 320px;
+    }
+}

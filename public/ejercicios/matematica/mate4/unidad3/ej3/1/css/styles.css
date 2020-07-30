@@ -1,0 +1,138 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: 70%;
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.contenedor-ejercicios img {
+    width: 350px;
+}
+
+table {
+    width: fit-content;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+table tr td {
+    text-align: center;
+}
+
+table tr th {
+    background-color: rgb(55, 154, 247);
+    color: rgb(255, 255, 255);
+}
+
+table,
+th,
+td {
+    text-align: center;
+}
+
+table td {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+table td i {
+    color: tomato;
+    padding: 0 5px;
+    font-style: normal;
+    border: solid silver 2px;
+    border-radius: 50%;
+    margin-right: -2px;
+}
+
+table tr td.azul {
+    background-color: rgb(55, 154, 247);
+    color: white;
+    font-weight: 700;
+}
+
+table td {
+    padding: 10px 15px;
+}
+
+table tr td span.respuesta {
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    line-height: 3.3rem;
+    margin-bottom: 5px;
+}
+
+.contenedor-palabras {
+    width: fit-content;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+span.palabra {
+    display: inline-block;
+    padding: 4px 8px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin: 0 3px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: white;
+}
+
+span.palabra:hover {
+    border-color: #37D3F7;
+}
+
+td span.select {
+    display: inline-flex;
+    width: fit-content;
+}
+
+td span.select select {
+    color: rgb(47, 196, 230);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicios {
+        width: 80%;
+    }
+    table td {}
+    table td span {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    h5 {
+        font-size: 150%;
+    }
+    select {
+        height: 2.5rem;
+    }
+}

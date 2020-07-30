@@ -1,0 +1,43 @@
+h4 {
+    text-align: center;
+}
+
+.contenedor-ejercicios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ejercicio {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.ejercicio .imagen-palabra {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid silver;
+    border-radius: 12px;
+}
+
+.ejercicio .imagen-palabra img {
+    width: 100px;
+}
+
+.ejercicio .imagen-palabra:hover {
+    border-color: #37D3F7;
+}
+
+
+/************/
+
+
+/**************/
+
+@media(max-height: 640px) {}

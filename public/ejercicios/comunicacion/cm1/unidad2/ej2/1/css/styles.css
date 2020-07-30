@@ -1,0 +1,138 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 70%;
+    padding-top: 30px;
+}
+
+.grid-item {
+    padding: 1rem 0 .7rem 0;
+    color: #929796;
+    border: 3px solid limegreen;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1px;
+    grid-auto-rows: minmax(300px, auto);
+    grid-auto-flow: dense;
+    padding: 25px;
+}
+
+.te {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+@media (min-width:1200px) and (min-height: 540px) {
+    .container-two {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 90%;
+    }
+    .te {
+        font-size: 26px;
+    }
+    .grid-layout {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(213px, 1fr));
+        grid-gap: 1px;
+        grid-auto-rows: minmax(200px, 290px);
+        grid-auto-flow: dense;
+        padding: 1px;
+    }
+}
+
+@media (min-height: 937px) {
+    .container-two {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 70%;
+    }
+    .te {
+        font-size: 30px;
+    }
+    .grid-layout {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 1px;
+        grid-auto-rows: minmax(300px, auto);
+        grid-auto-flow: dense;
+        padding: 1px;
+    }
+}
+
+#listB {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h4 {
+    text-align: center;
+}
+
+#listB {
+    padding-top: 6vh;
+}
+
+@media (min-width: 1024px) {
+    #listB {
+        width: fit-content;
+        margin: auto;
+    }
+}
+
+.cT {
+    height: 50px;
+    width: 50%;
+    border: 3px solid #37D3F7;
+    border-radius: 12px;
+    float: left;
+    margin-left: 1rem;
+}
+
+.box-img-b {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-img {
+    width: 50%;
+    height: auto;
+}
+
+.box-img img {
+    width: 90%;
+    height: auto;
+}
+
+.borde {
+    border-top: 3px solid limegreen;
+    padding-top: 10px;
+}
+
+.box {
+    height: 40px;
+    width: 90px;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-right: 1vh;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 30px;
+    background: rgba(139, 195, 74, 0.14);
+    box-shadow: none !important;
+}
+
+.box:hover {
+    background: #B6ECFF;
+    box-shadow: none !important;
+}

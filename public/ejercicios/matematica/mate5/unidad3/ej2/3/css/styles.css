@@ -1,0 +1,150 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: 70%;
+    min-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.uno {
+    width: 205px;
+    height: 152px;
+    background-image: url(../img/1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.dos {
+    width: 200px;
+    height: 167px;
+    background-image: url(../img/2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.contenedor p {
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 5px;
+    margin: 0;
+}
+
+p span {
+    color: tomato;
+}
+
+span.select {
+    display: inline-flex;
+    width: fit-content;
+    margin-left: 4px;
+}
+
+span.select select {
+    color: rgb(47, 196, 230);
+    font-size: 1.6rem;
+}
+
+#numeros {
+    align-self: center;
+}
+
+span.simbolos {
+    display: block;
+    width: 205px;
+    height: 38px;
+    background-image: url(../img/1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+span.simbolos.d {
+    width: 307px;
+    background-image: url(../img/2.png);
+}
+
+span.blanca {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+span.negra {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.pt {
+    padding-top: 30px!important;
+}
+
+span.azul {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicios {
+        width: fit-content;
+    }
+    .contenedor p {
+        font-size: 1.3rem;
+        padding: 2px;
+    }
+    .pt {
+        padding-top: 25px!important;
+    }
+}

@@ -1,0 +1,90 @@
+h5 {
+    width: 80%;
+    font-size: 24px;
+}
+
+@media (min-width: 1920px) {
+    h5 {
+        font-size: 200%;
+    }
+}
+
+.contenedor-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+}
+
+/* Parte 1 */
+
+.opciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+
+.pieza {
+    margin: 1vh;
+    z-index: 1;
+}
+
+/* Parte 2 */
+
+.esquema {
+    position: relative;
+    width: 950px;
+    height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.principal {
+    width: 100%;
+    height: auto;
+}
+
+.img {
+    width: auto;
+    height: 35px;
+}
+
+.text {
+    position: absolute;
+    margin: auto;
+    width: 90%;
+    font-size: 1.5em;
+}
+.seleccion:hover {
+    border: 2px solid rgb(55, 211, 247);
+    background: rgb(182, 236, 255);
+}
+/* Responsive */
+
+@media (min-width: 1920px) {
+    .esquema {
+        width: 1140px;
+        height: 380px;
+    }
+    .img {
+        width: auto;
+        height: 45px;
+    }
+    .text {
+        font-size: 1.8em;
+    }
+}

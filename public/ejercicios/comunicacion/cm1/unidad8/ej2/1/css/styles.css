@@ -1,0 +1,17 @@
+.box-img {
+    width: 50%;
+    margin: auto;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.box-img img {
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media(max-height: 640px) {
+    .box-img img {
+        width: 55%;
+    }
+}

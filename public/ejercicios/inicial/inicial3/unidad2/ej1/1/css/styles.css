@@ -1,0 +1,130 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (min-width:1920px) {
+    .container-two {
+        height: 70%;
+    }
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 2vh;
+}
+
+@media (min-width: 1920px) {
+    .img {
+        width: 80px;
+        height: auto;
+    }
+}
+
+.img-lista {
+    width: 100px;
+    height: 100px;
+    background: #41a62a;
+    border-radius: 12px;
+}
+
+@media (min-width: 1920px) {
+    .img-lista {
+        width: 160px;
+    }
+}
+
+.grid-colores {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-lista {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0vh 4vh;
+}
+
+.lista {
+    width: 120px;
+    height: 120px;
+    border: 2px solid silver;
+    margin: 0.5vh;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.8em;
+}
+
+@media (min-width: 1920px) {
+    .lista {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+.w1 {
+    width: auto;
+    height: 36px;
+}
+.w2 {
+    width: auto;
+    height: 60px;
+}
+.w3 {
+    width: auto;
+    height: 90px;
+}
+@media (min-width: 1920px) {
+    .w1 {
+        width: auto;
+        height: 48px;
+    }
+    .w2 {
+        width: auto;
+        height: 80px;
+    }
+    .w3 {
+        width: auto;
+        height: 120px;
+    } 
+}
+
+h5 {
+    width: 85%;
+    font-size: 200%;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arca de Papel</title>
+    <!-- CSS  -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://plataforma.arcadepapel.net/css/materialize.css" type="text/css" rel="stylesheet"
+        media="screen,projection" />
+    <link rel="stylesheet" href="https://plataforma.arcadepapel.net/css/core.css">
+    <link rel="stylesheet" type="text/css" href="https://plataforma.arcadepapel.net/view/comunicacion/1/unidad.css">
+    <link rel="stylesheet" href="https://plataforma.arcadepapel.net/js/ui/jquery-ui.min.css">
+    <script src="https://plataforma.arcadepapel.net/js/jquery-3.4.1.min.js"></script>
+    <script src="https://plataforma.arcadepapel.net/js/ui/jquery-ui.min.js"></script>
+    <script src="https://plataforma.arcadepapel.net/js//ui/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript">
+        var count = 3;
+    </script>
+    <link rel="stylesheet" href="https://plataforma.arcadepapel.net/view/comunicacion/1/0/1/css/force-lastcape.css">
+</head>
+<img class="logoUnidad">
+<script>$('.logoUnidad').attr("src", "https://plataforma.arcadepapel.net/img/unidades/3.png");</script>
+<body>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <audio id="click" src="https://plataforma.arcadepapel.net/asset/cursor/sound/click.mp3"></audio>
+    <audio id="bien" src="https://plataforma.arcadepapel.net/view/tools/sound/bien.mp3">
+    </audio>
+    <audio id="fallo" src="https://plataforma.arcadepapel.net/view/tools/sound/fallo.mp3">
+    </audio>
+    <div id="vertical"></div>
+    <div class="ftitle" id="ftitle"></div>
+
+    <div class="container-two">
+        <div class="content">
+            <div class="fila">
+                <div class="">
+                    <img src="./img/1.png" alt="">
+                </div>
+                <div class="numero">0</div>
+                <div class="numero">1</div>
+                <div class="numero">2</div>
+                <div class="numero">3</div>
+                <div class="numero">4</div>
+                <div class="numero">5</div>
+                <div class="numero">6</div>
+                <div class="numero">7</div>
+                <div class="numero">8</div>
+                <div class="numero">9</div>
+                <div class="numero">10</div>
+                <div class="numero">11</div>
+                <div class="numero">12</div>
+            </div>
+            <div class="fila rpta">
+                <div class="numero amarillo">2</div>
+                <div class="contenedor" alt="0"></div>
+                <div class="contenedor" alt="2"></div>
+                <div class="contenedor" alt="4"></div>
+                <div class="contenedor" alt="6"></div>
+                <div class="contenedor" alt="8"></div>
+                <div class="contenedor" alt="10"></div>
+                <div class="contenedor" alt="12"></div>
+                <div class="contenedor" alt="14"></div>
+                <div class="contenedor" alt="16"></div>
+                <div class="contenedor" alt="18"></div>
+                <div class="contenedor" alt="20"></div>
+                <div class="contenedor" alt="22"></div>
+                <div class="contenedor" alt="24"></div>
+            </div>
+            <div class="respuestas aleatorio">
+                <p class="pieza" alt="0">0</p>
+                <p class="pieza" alt="2">2</p>
+                <p class="pieza" alt="4">4</p>
+                <p class="pieza" alt="6">6</p>
+                <p class="pieza" alt="8">8</p>
+                <p class="pieza" alt="10">10</p>
+                <p class="pieza" alt="12">12</p>
+                <p class="pieza" alt="14">14</p>
+                <p class="pieza" alt="16">16</p>
+                <p class="pieza" alt="18">18</p>
+                <p class="pieza" alt="20">20</p>
+                <p class="pieza" alt="22">22</p>
+                <p class="pieza" alt="24">24</p>
+            </div>
+        </div>
+</div>
+
+
+    </section>
+    <div id="modal1" style="display: none;" class="modal">
+        <div class="modal-content">
+            <h4>Respuesta correcta</h4>
+            <center>
+                <img class="materialboxed" width="80%" src="./img/respuesta.png">
+            </center>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+        </div>
+    </div>
+    <div id="ventana"></div>
+    <div id="correcto" class="modal">
+        <div class="modal-content">
+            <center>
+                <h4>Respuesta correcta <i class="material-icons">sentiment_very_satisfied</i></h4>
+            </center>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-close waves-effect waves-green btn-flat">Listo!</a>
+        </div>
+    </div>
+    <div id="incorrecto" class="modal">
+        <div class="modal-content">
+            <center>
+                <h4>Respuesta Incorrecta <i class="material-icons">sentiment_very_dissatisfied</i></h4>
+            </center>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+        </div>
+    </div>
+    <script src="https://plataforma.arcadepapel.net/js/materialize.min.js"></script>
+    <script src="https://plataforma.arcadepapel.net/js/core.js"></script>
+    <center>
+        <div class="botones">
+            <a title="Ver Respuesta" class="modal-trigger tooltipped" href="#modal1">
+                <div class="btn red pulse btn-floating fixed-action-btn tooltipped" data-position="left"
+                    data-tooltip="Ver Respuesta Correcta" id="respuesta">
+                    <i class="material-icons">assignment_turned_in</i></div>
+            </a>
+            <div class="btn  btn-floating  btn-small  btn-intentos tooltipped" data-position="top"
+                data-tooltip="Intentos restantes" id="intentos">3</div>
+            <div class="btnEnviar btn-small center" value="" id="boton1" onclick="">Enviar Respuesta</div>
+            <div class="btnCorregir btn-small center" value="" onclick="window.location.reload()">Reiniciar</div>
+            <a class="btn-small btnSiguiente center disabled" id="nextExercise" href="">Siguiente</a>
+        </div>
+    </center>
+    <script src="./js/validate.js"></script>
+</body>
+
+</html>

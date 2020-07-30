@@ -1,0 +1,91 @@
+h5 {
+    width: 80%;
+}
+
+.oracion h4 {
+    text-align: center;
+    color: #20bcdb;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-oraciones {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    align-items: center;
+}
+
+.contenedor-check {
+    padding-top: 20px;
+}
+
+.oracion {
+    width: 100%;
+    padding-top: 15px;
+}
+
+.contenedor-check {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    flex-wrap: wrap;
+}
+
+.contenedor-check .respuesta {
+    width: 70%;
+    padding: 10px 25px;
+    margin: 5px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.contenedor-check .respuesta:hover {
+    border-color: #20bcdb;
+}
+
+.contenedor-check .respuesta span {
+    font-size: 2rem;
+}
+
+span.celeste {
+    color: #37d3f7;
+}
+
+
+/************/
+
+
+/**************/
+
+@media(max-height: 640px) {
+    .contenedor-oraciones {
+        width: 86%;
+        padding-top: 0;
+    }
+    .contenedor-check {
+        padding-top: 0;
+    }
+    .oracion h5 {
+        font-size: 1.6rem;
+        padding-top: 0;
+    }
+    .contenedor-check .respuesta {
+        width: 80%;
+        padding: 6px 15px;
+    }
+    .contenedor-check .respuesta span {
+        font-size: 1.5rem;
+    }
+}

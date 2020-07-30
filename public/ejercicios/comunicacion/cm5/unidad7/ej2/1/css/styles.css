@@ -1,0 +1,28 @@
+h5 {
+    width: 80%;
+}
+
+.oracion h4 {
+    text-align: center;
+    color: #20bcdb;
+}
+.contenedor-two{
+    width: 80%;
+    margin: auto;
+    padding-top: 6vh;
+}
+.contenedor-check{
+    width: 60%;
+    font-size: 24px;
+    margin: 20px 10px;
+}
+.seleccion{
+    border: 1px solid #333;
+}
+@media(max-width: 1450px) {
+    .contenedor-check{
+        width: 80%;
+        font-size: 24px;
+        margin: 20px 10px;
+    }
+}

@@ -1,0 +1,62 @@
+h5 {
+    width: 85%;
+}
+
+.oracion h4 {
+    text-align: center;
+    color: #20bcdb;
+}
+
+.contenedor-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.item {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    align-items: center;
+}
+.item .oracion{
+    padding: 6px 10px;
+    font-size: 24px;
+}
+.item .options{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+.item .options > div{
+    border: 2px solid rgb(87, 87, 87);
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+@media(max-height: 640px) {
+    h4 {
+        font-size: 1.8rem;
+    }
+    .contenedor-oraciones {
+        width: 80%;
+        padding-top: 0;
+    }
+    .contenedor-check {
+        padding-top: 0;
+    }
+    .oracion h5 {
+        font-size: 1.6rem;
+        padding-top: 0;
+    }
+    .contenedor-check .respuesta {
+        width: 80%;
+        padding: 6px 15px;
+    }
+    .contenedor-check .respuesta span {
+        font-size: 1.5rem;
+    }
+}

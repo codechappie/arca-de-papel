@@ -1,0 +1,88 @@
+h5 {
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.imagen {
+    width: 400px;
+    text-align: center;
+}
+
+.imagen img {
+    max-width: 100%;
+    max-height: 60vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin: 5px;
+}
+
+.grid-item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin: 5px;
+    padding: 10;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    max-height: 150px;
+}
+
+span {
+    color: tomato;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+span.selectx {
+    display: inline-flex;
+    width: 70px;
+}
+
+span select {
+    color: rgb(29, 131, 214);
+    text-align: center;
+}
+
+span select option {
+    text-align: center;
+}
+
+@media(max-height: 640px) {
+    .grid-item {
+        width: 90px;
+        height: 48px;
+        padding: 0;
+    }
+    .grid-item img {
+        max-height: 100%;
+    }
+}

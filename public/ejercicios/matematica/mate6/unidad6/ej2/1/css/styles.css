@@ -1,0 +1,125 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+.content{
+    width: 77%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    justify-items: center;
+}
+.options{
+    display: flex;
+    font-size: 24px;
+    font-weight: 500;
+}
+.contenedores{
+    display: flex;
+    border: 2px solid rgb(132, 251, 255);
+}
+.pieza{
+    border: 3px solid rgb(118, 250, 255);
+    padding: 4px 15px;
+    margin: 2px 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.contenedor{
+    background-color: #fff;
+
+    border: 3px solid rgb(105, 250, 243);
+}
+.fila span{
+    display: inline-block;
+    font-size: 22px;
+}
+select{
+    font-size: 22px;
+    padding: 0px 2px;
+    width: 45px;
+    height: 35px;
+    appearance: none;
+    -moz-appearance: none;
+    -ms-progress-appearance: none;
+    -webkit-appearance: none;
+    border: 3px solid rgb(177, 255, 251);
+}
+.fila p{
+    font-size: 25px;
+    margin: 10px;
+}
+.preg{
+    font-weight: 500;
+}
+.ecuacion{
+    display: flex;
+    font-size: 25px;
+    justify-items: center;
+    align-items: center;
+    margin: 20px;
+}
+.linea{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-bottom: 3px solid rgb(236, 0, 0);
+}
+.relac{
+    position: relative;
+}
+.ray{
+    position: absolute;
+    width: 20px;
+    right: 18;
+    top: 10;
+    border: 1px solid #333;
+}
+.sre{
+    margin: auto;
+}
+.frac div{
+    text-align: center;
+}
+@media screen and (max-width: 1300px) {
+    .content{
+        width: 77%;
+        margin: auto;
+        display: grid;
+        grid-row-gap: 10px;
+        grid-column-gap: 0px;
+        justify-items: center;
+    }
+    .container {
+        display: flex;
+        height: 65%;
+    }
+    .fila p {
+        font-size: 23px;
+    }
+}
+/*@media screen and (max-height: 950px) {
+    .container .row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .operacion{
+        font-size: 1.2rem;
+        padding: 15px 0;
+    }
+    .contenedor{
+        width: 100%;
+    }
+} */

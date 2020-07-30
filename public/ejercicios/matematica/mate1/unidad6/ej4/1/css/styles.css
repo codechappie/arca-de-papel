@@ -1,0 +1,41 @@
+#contenedorpuzzle {
+    width: 590px;
+    margin: 10vh auto;
+}
+.p {
+    font-size: 2em;
+}
+.ms {
+    color: #0095DA;
+}
+.item {
+    /* width: 50px; */
+    margin: 0px 10px;
+    float: left;
+    border: 3px dashed #37D3F7;
+    border-radius: 12px;
+    background: content-box;
+    padding: 10px 22px;
+}
+
+.item:hover {
+    border: solid #37D3F7;
+    cursor: pointer;
+}
+
+h5 {
+    font-size: 200%;
+}
+
+.img-principal {
+    margin: 10vh auto;
+}
+.img-principal img.p-img {
+    width: auto;
+    height: 120px;
+}
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

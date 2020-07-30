@@ -1,0 +1,36 @@
+.container-two {
+  margin: 3vh auto 0;
+  height: 56%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  max-width: 1280px;
+}
+.ejemplo {
+  text-align: center;
+}
+.ejemplo img{
+  width: 180px;
+}
+.opciones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.opciones img{
+  height: 120px;
+}
+.item{
+  border: 2px solid rgb(231, 231, 231);
+  margin: 10px;
+  padding: 10px;
+  justify-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 1300px){
+  .ejemplo img{
+    width: 120px;
+  }
+  .opciones img{
+    height: 80px;
+  }
+}

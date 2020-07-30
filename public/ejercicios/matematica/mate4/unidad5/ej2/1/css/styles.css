@@ -1,0 +1,110 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicio {
+    width: 70%;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.grid-num {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    position: relative;
+}
+
+.grid-item {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    /* padding: 20px; */
+    font-size: 24px;
+    text-align: center;
+    width: 30px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    position: relative;
+    border: 1px solid silver
+}
+
+.xxs {
+    position: absolute;
+    bottom: -68px;
+    width: 875px;
+    margin-left: -12px;
+    height: 62px;
+    background-image: url(../img/1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-color: transparent;
+}
+
+.fracciones {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    border-radius: 12px;
+}
+
+.fraccion {
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.item.bt {
+    border-top: 2px solid cornflowerblue;
+}
+
+@media(max-width: 1550px) {
+    .contenedor-palabras {
+        padding-top: 25px;
+    }
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicio {
+        padding-top: 0px;
+    }
+    .contenedor-x {
+        height: 240px;
+    }
+    .contenedor-palabras {
+        padding-top: 20px;
+        width: 80%;
+        text-align: center;
+    }
+    span.palabra {
+        font-size: 1.6rem;
+        padding: 3px 8px;
+        margin: 1px 3px;
+    }
+}

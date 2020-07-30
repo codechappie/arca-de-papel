@@ -1,0 +1,91 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-oraciones {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 25px;
+    align-items: center;
+}
+
+.contenedor-check {
+    padding-top: 20px;
+}
+
+.oracion {
+    width: 100%;
+    padding-top: 35px;
+}
+
+.oracion h5 {
+    text-align: center;
+}
+
+.contenedor-check {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-check .respuesta {
+    padding: 10px;
+    margin: 5px;
+    border: 3px solid silver;
+    border-radius: 12px;
+}
+
+.contenedor-check .respuesta:hover {
+    border-color: rgb(40, 179, 243);
+}
+
+.contenedor-check .respuesta span {
+    font-size: 1.5rem;
+}
+
+.rsp {
+    background-color: rgb(56, 185, 245);
+}
+
+
+/************/
+
+
+/**************/
+
+@media(max-height: 640px) {
+    .contenedor-oraciones {
+        width: 86%;
+    }
+    .contenedor-check {
+        padding-top: 0;
+    }
+    .contenedor-check .respuesta {
+        padding: 5px;
+        margin: 8px;
+    }
+    .oracion h5 {
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+    }
+    .oracion {
+        width: 100%;
+        padding-top: 20;
+    }
+}

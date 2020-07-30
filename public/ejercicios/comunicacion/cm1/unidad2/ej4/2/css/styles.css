@@ -1,0 +1,110 @@
+h4 {
+    text-align: center;
+}
+
+#listA {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#palabras li {
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    /*border: 3px solid silver;*/
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.box img {
+    width: 90%;
+}
+
+.vocal {
+    width: 140px;
+    height: 50px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+
+/*Style nuevos*/
+
+.contenedor-silabas {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.contenedor-silabas .silaba {
+    width: 19%;
+}
+
+.silaba h4 {
+    background-color: #37D3F7;
+    padding: 8px 0;
+    border-radius: 12px;
+}
+
+
+/*Media querys*/
+
+@media (min-width: 600px) {
+    #palabras li {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2vh;
+    }
+}
+
+@media (min-height: 540px) {
+    #palabras li {
+        width: 18.3%;
+        margin: auto;
+        margin-bottom: 2vh;
+    }
+    .box-img {
+        border-left: 1px solid silver;
+        padding: 10px;
+    }
+}
+
+@media(min-height: 640px) {
+    #palabras {
+        padding: 50px;
+    }
+}
+
+@media (min-width: 1920px) {
+    #palabras li {
+        width: 33.3%;
+        margin: auto;
+        margin-bottom: 2vh;
+    }
+    .box {
+        height: 150px;
+        width: 150px;
+        border: 3px solid silver;
+    }
+    .box-img {
+        border: none;
+        padding: 10px;
+    }
+    .vocal {
+        width: 200px;
+        height: 60px;
+    }
+}

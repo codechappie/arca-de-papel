@@ -1,0 +1,69 @@
+.container-two {
+    margin: 0 auto;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/****** Estilos generales ******/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.seleccion {
+    width: 30px;
+    height: 30px;
+    border: 1px solid darkolivegreen;
+    margin: 3vh 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.bn {
+    border: none;
+    pointer-events: none;
+    cursor: none;
+}
+.img {
+    width: 85px;
+    height: auto;
+}
+@media (min-width: 1920px) {
+    .seleccion {
+        width: 50px;
+        height: 50px;
+        font-size: 3em;
+    }
+    .img {
+        width: 125px;
+        height: auto;
+    }
+}
+h5 {
+    width: 80%;
+    font-size: 24px;
+}
+
+.principal {
+    width: 100%;
+    height: auto;
+}

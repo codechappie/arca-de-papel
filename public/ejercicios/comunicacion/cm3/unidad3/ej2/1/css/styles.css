@@ -1,0 +1,46 @@
+.row {
+    width: 85%;
+}
+
+ul.tabs {
+    background-color: rgb(45, 123, 240);
+    margin-top: 30px;
+}
+
+ul.tabs li.activo {
+    background-color: rgb(90, 148, 235);
+    ;
+}
+
+ul.tabs li.tab a {
+    color: white!important;
+}
+
+ul.tabs li.indicator {
+    background-color: rgb(211, 211, 211)!important;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+    background-color: inherit!important;
+    outline: none;
+}
+
+.lectura-img {
+    text-align: center;
+}
+
+.lectura-img img {
+    padding-top: 20px;
+    width: 37%;
+    margin: auto;
+}
+
+@media(max-height: 640px) {
+    .row {
+        width: 90%;
+    }
+    .lectura-img img {
+        width: 30%;
+    }
+}

@@ -1,0 +1,165 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 60%;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.img-mago {
+    text-align: center;
+    padding-top: 32px;
+}
+
+.img-mago img {
+    height: 115px;
+}
+
+@media (min-width: 1920px) {
+    .container-two {
+        width: 55%;
+        margin-top: 5%;
+    }
+}
+
+p {
+    font-size: 18px;
+    margin: 15px 20px 0px 20px;
+}
+
+p span {
+    color: #0095DA;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+
+/**
+  * Styles for the puzzle
+  */
+
+#juego {
+    /* border: 1px solid black; */
+    /* padding: 20px; */
+    float: left;
+    margin: 0px 20px;
+}
+
+#juego div {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* style for each square in the puzzle */
+
+#juego .puzzleSquare {
+    height: 40px;
+    width: 50;
+    border: 1px solid #37D3F7;
+    text-transform: uppercase;
+    background-color: white;
+    font: 2em sans-serif;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+
+/* indicates when a square has been selected */
+
+#juego .selected {
+    background-color: #B6ECFF;
+}
+
+
+/* indicates that the square is part of a word that has been found */
+
+#juego .found {
+    /*background-color: #37D3F7;*/
+    color: white;
+}
+
+.color1 {}
+
+#juego .solved {
+    background-color: purple;
+    color: white;
+}
+
+
+/* indicates that all words have been found */
+
+
+/* #juego .complete {
+    background-color: green;
+  } */
+
+
+/**
+  * Styles for the word list
+  */
+
+.preguntas {
+    justify-content: center;
+}
+
+#Palabras {
+    padding-top: 20px;
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    width: 300px;
+}
+
+#Palabras ul {
+    list-style-type: none;
+}
+
+#Palabras li {
+    padding: 3px 0;
+    font: 1em sans-serif;
+}
+
+
+/* indicates that the word has been found */
+
+#Palabras .wordFound {
+    text-decoration: line-through;
+    color: gray;
+}
+
+
+/**
+  * Styles for the button
+  */
+
+#solve {
+    margin: 0 30px;
+}
+
+@media(max-height: 680px) {
+    .container-two {
+        width: 70%;
+        margin-top: 0;
+    }
+    #juego .puzzleSquare {
+        height: 30px;
+        width: 30;
+        font-size: 1em;
+    }
+    .img-mago {
+        padding-top: 0;
+    }
+    .img-mago img {
+        height: 100px;
+    }
+    p {
+        margin: 6px 20px 0px 20px;
+    }
+}

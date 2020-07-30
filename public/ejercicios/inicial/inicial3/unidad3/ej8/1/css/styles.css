@@ -1,0 +1,79 @@
+.container-two {
+    margin: 0 auto;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-option {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4vh
+}
+
+.pieza {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #000;
+    margin: 0.5vh;
+    z-index: 1;
+}
+.campo-image {
+    position: relative;
+}
+.contenedor {
+    background: transparent;
+    padding: 5px;
+    width: 180px;
+    height: 140px;
+    border-radius: 12px;
+}
+.p1 {
+    position: absolute;
+    top: 92px;
+    left: 10px;
+}
+.p2 {
+    position: absolute;
+    top: 7px;
+    right: 67px;
+    left: 0;
+    margin: auto;
+}
+.p3 {
+    position: absolute;
+    top: 92px;
+    right: 91px;
+}
+/****** Estilos generales ******/
+
+h5 {
+    width: 80%;
+}
+
+.principal {
+    width: 650px;
+}
+
+.img {
+    width: auto;
+    height: 128px;
+}

@@ -1,0 +1,47 @@
+h4 {
+    text-align: center;
+}
+
+#listA {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#palabras {
+    padding: 50px;
+}
+
+#palabras li {
+    margin-bottom: 2vh;
+    margin-right: 1px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.muestra {
+    width: 100px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #0095DA ;
+}
+
+.box img {
+    width: 50%;
+    height: auto;
+}
+
+.box:hover {
+    border: 3px solid #37D3F7;
+}

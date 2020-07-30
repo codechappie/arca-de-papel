@@ -1,0 +1,110 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-top: 50px;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+table tr td {
+    text-align: center;
+}
+
+table tr th {
+    background-color: rgb(55, 154, 247);
+    color: rgb(255, 255, 255);
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table td span {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+table tr td.azul {
+    background-color: rgb(55, 154, 247);
+    color: white;
+}
+
+table tr td span.respuesta {
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    line-height: 3.3rem;
+    margin-bottom: 5px;
+}
+
+.contenedor-palabras {
+    width: fit-content;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+span.palabra {
+    display: inline-block;
+    padding: 4px 8px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin: 0 3px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: white;
+}
+
+span.palabra:hover {
+    border-color: #37D3F7;
+}
+
+td span.select {
+    display: inline-flex;
+    width: 210px;
+}
+
+td span.select select {
+    color: rgb(47, 196, 230);
+    font-size: 1.4rem;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicios {
+        width: 80%;
+    }
+    table td {
+        padding: 9px 5px;
+    }
+}

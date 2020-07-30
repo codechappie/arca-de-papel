@@ -1,0 +1,116 @@
+h4 {
+    text-align: center;
+}
+
+.row {
+    text-align: center;
+}
+
+.contenedor-ejercicios {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-top: 30px;
+}
+
+.contenedor-ejercicios img {
+    height: 130px;
+    width: auto;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.contenedor-ejercicios img.img-ejercicio {
+    width: 400px;
+}
+
+.ejercicio {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.contenedor-respuesta {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-respuesta .palabra {
+    width: 180px;
+    height: 50px;
+    border: 3px solid silver;
+    border-radius: 12px;
+}
+
+.contenedor-respuesta span {
+    font-size: 1.9rem;
+    display: block;
+}
+
+.contenedor-respuesta span.span-before {
+    margin-right: 7px;
+}
+
+.contenedor-respuesta span.span-after {
+    margin-left: 7px;
+}
+
+
+/************/
+
+.contenedor-silabas {
+    display: inline-flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.contenedor-silabas .silabas {
+    margin: 0px 5px;
+}
+
+.silabas h4 {
+    display: inline-block;
+    font-size: 1.8rem;
+    background-color: #37D3F7;
+    font-weight: bold;
+    padding: 3px 15px;
+    border-radius: 12px;
+    
+}
+
+
+/**************/
+
+@media(max-height: 740px) {
+    .row {
+        display: flex;
+        align-items: flex-start;
+    }
+    .contenedor-silabas {
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .contenedor-ejercicios img.img-ejercicio {
+        width: 250px;
+    }
+    .ejercicio {
+        padding-top: 2px;
+    }
+    .silabas {
+        text-align: center;
+    }
+    .contenedor-ejercicios {
+        padding-top: 20px;
+    }
+    .contenedor-ejercicios img {
+        margin-bottom: 15px;
+    }
+}

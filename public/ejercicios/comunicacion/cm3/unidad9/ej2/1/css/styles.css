@@ -1,0 +1,116 @@
+h4 {
+    text-align: center;
+}
+
+.row {
+    width: 82%;
+    margin: 0 auto;
+}
+
+.container-cuento {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.lectura {
+    width: 50%;
+    padding: 15px;
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lectura h5 {
+    color: #0095DA;
+    text-align: center;
+    width: 100%;
+}
+
+.lectura p {
+    width: 50%;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.imagen-lectura {
+    width: 50%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.imagen-lectura img {
+    max-width: 80%;
+    max-height: 500px;
+    margin: 0 auto;
+}
+
+ul.tabs {
+    background-color: rgb(45, 123, 240);
+    margin-top: 30px;
+}
+
+ul.tabs li.activo {
+    background-color: rgb(90, 148, 235);
+    ;
+}
+
+ul.tabs li.tab a {
+    color: white!important;
+}
+
+ul.tabs li.indicator {
+    background-color: rgb(211, 211, 211)!important;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+    background-color: inherit!important;
+    outline: none;
+}
+
+p.autor {
+    position: relative;
+}
+
+p.autor::after {
+    position: absolute;
+    display: block;
+    content: 'José Martí';
+    bottom: 1px;
+    right: 0;
+    color: #0095DA;
+}
+
+
+/************/
+
+
+/**************/
+
+@media(max-height: 640px) {
+    .container-cuento {
+        align-items: center;
+    }
+    ul.tabs {
+        margin-top: 10px;
+    }
+    .lectura {
+        width: 70%;
+        padding-top: 16px;
+    }
+    .lecx {
+        padding-top: 0px;
+    }
+    .imagen-lectura {
+        width: 30%;
+    }
+    .lectura p {
+        font-size: 1rem;
+    }
+    .imagen-lectura img {
+        width: 100%;
+    }
+}

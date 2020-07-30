@@ -1,0 +1,62 @@
+h4 {
+    text-align: center;
+}
+
+.container-cuento {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.lectura {
+    width: 50%;
+    padding: 15px;
+    padding-top: 25px;
+}
+
+.lectura h5 {
+    color: #0095DA;
+    text-align: center;
+}
+
+.lectura p {
+    font-size: 1.3rem;
+}
+
+.imagen-lectura {
+    width: 50%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.imagen-lectura img {
+    max-width: 100%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/************/
+
+
+/**************/
+
+@media(max-height: 640px) {
+    .container-cuento {
+        align-items: center;
+    }
+    .lectura {
+        width: 70%;
+        padding-top: 16px;
+    }
+    .imagen-lectura {
+        width: 30%;
+    }
+    .lectura p {
+        font-size: 1rem;
+    }
+    .imagen-lectura img {
+        width: 80%;
+    }
+}

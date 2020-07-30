@@ -1,0 +1,141 @@
+
+
+
+h4 {
+    text-align: center;
+  }
+  
+  #listA {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #palabras {
+    padding: 50px;
+  }
+  
+  #palabras li {
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .box {
+    height: 150px;
+    width: 150px;
+    /*border: 3px solid silver;*/
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  
+  .box img {
+    width: 50%;
+  }
+  
+  .vocal {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+  
+  .vocal p {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    border:  3px solid silver;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 2px;
+  }
+  .vocal p:hover {
+    border: 3px solid #37D3F7;
+  }
+
+
+  .center-container{
+    width: 600px;
+    margin: 2px auto;
+  }
+  .row{
+    border: 5px solid #ff6b6b;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 5px;
+  }
+  .options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .options{
+    border-left: 5px solid #ff6b6b;
+  }
+  .row .first-image{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 5px 0px;
+  }
+  .row .first-image img{
+    width: 80px;
+  }
+  .row .image{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .row .image img{
+    width: 80px;
+    height: auto;
+    padding: 2px;
+  }
+  
+  @media (min-width: 600px) {
+    #palabras li {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2vh;
+    }
+  }
+  
+  @media (min-height: 540px) {
+    #palabras li {
+        width: 18.3%;
+        margin: auto;
+        margin-bottom:2vh;
+    }
+    .box-img {
+        border-left: 1px solid silver;
+        padding: 10px;
+    }
+  }
+  @media (min-width: 1920px) {
+    #palabras li {
+        width: 33.3%;
+        margin: auto;
+        margin-bottom:2vh;
+    }
+    .box {
+        height: 150px;
+        width: 150px;
+        border: 3px solid silver;
+    }
+    .box-img {
+        border: none;
+        padding: 10px;
+    }
+    .vocal p {
+        width: 150px;
+        height: 50px;
+        font-size: 28px;
+    }
+  }

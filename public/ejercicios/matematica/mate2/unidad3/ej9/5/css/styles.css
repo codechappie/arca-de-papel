@@ -1,0 +1,73 @@
+.caja-principal {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 70%;
+  margin-top: 5vh;
+}
+.content{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 20px;
+}
+
+.header{
+  width: 80%;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+align-items: center;
+justify-items: center;
+background-color: rgb(211, 28, 98);
+color: #fff;
+font-weight: 600;
+font-size: 22px;
+}
+.header >div{
+  border: 1px solid rgb(105, 105, 105);
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.cuerpoTablas{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 80%;
+}
+.cuerpoTablas > div{
+  height: 100px;
+  border: 1px solid rgb(139, 139, 139);
+  border-top: none;
+}
+.column{
+  font-size: 22px;
+  padding: 0px 20px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  justify-items: center;
+}
+.contenedor{
+  width: 220px;
+  height: 80px; 
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 8px;
+  box-shadow: inset 1px 1px 2px rgba(8, 8, 8, 0.212);
+  transition: all .2s ease-in-out;
+}
+.contenedor:hover{
+  background-color: rgb(212, 250, 255);
+  transition: all .2s ease-in-out;
+}
+.draggables{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.pieza{
+  padding: 10px;
+  border: 1px solid rgb(233, 233, 233);
+  margin: 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 20px;
+}

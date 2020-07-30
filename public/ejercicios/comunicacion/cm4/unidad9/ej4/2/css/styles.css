@@ -1,0 +1,115 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.ejercicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ejercicio .imagen-palabra {
+    width: 450px;
+    display: flex;
+    padding-top: 35px;
+    justify-content: center;
+}
+
+.ejercicio .imagen-palabra img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.ejercicio .contenedor-respuesta {
+    width: fit-content;
+    padding-top: 15px;
+}
+
+.ejercicio .contenedor-respuesta p {
+    width: fit-content;
+    font-size: 1.7rem;
+}
+
+.ejercicio .contenedor-respuesta p span.palabra {
+    display: inline-flex;
+    width: 180px;
+    height: 50px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin: 5px;
+    color: transparent;
+}
+
+span.celeste {
+    color: #37d3f7;
+}
+
+
+/************/
+
+.contenedor-silabas {
+    display: inline-flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-left: 5%;
+    flex-wrap: wrap;
+}
+
+.contenedor-silabas .silabas {
+    margin: 0px 5px;
+}
+
+.silabas h4 {
+    display: inline-block;
+    font-size: 1.8rem;
+    background-color: #37D3F7;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 12px;
+}
+
+.palabrax h4 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/**************/
+
+@media(max-height: 640px) {
+    .contenedor-ejercicios {
+        padding-top: 0;
+    }
+    .ejercicio .contenedor-respuesta p {
+        margin: 0.3em 0;
+    }
+    .silabas h4 {
+        margin: 10px;
+    }
+}

@@ -1,0 +1,61 @@
+.caja-principal {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-top: 5vh;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image{
+    width: 600px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/1.png');
+    background-size: cover;
+    position: relative;
+
+}
+.imagenPosicion{
+    width: 570px;
+    height: 318px;
+    position: absolute;
+    right: 10;
+    bottom: 30;
+    z-index: 8;
+}
+.box{
+    position: absolute;
+    width: 400px;
+    height: 80px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.box1{
+    top: 90px;
+    left: 130px;
+}
+.box2{
+    top: 290px;
+    left: 130px;
+}
+.image img{
+    z-index: 8;
+}
+.objetos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.item{
+    margin: 20px;
+    z-index: 2;
+}
+.item img{
+    width: 100px;
+    z-index: 2;
+}
+.pieza:hover{
+    box-shadow: none;
+}

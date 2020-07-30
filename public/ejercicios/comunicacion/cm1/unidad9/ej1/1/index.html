@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arca de Papel</title>
+  <!-- CSS  -->
+  <style type="text/css">
+    h4 {
+        text-align: center;
+    }
+    
+    #listA {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #palabras {
+        padding: 50px;
+    }
+    
+    #palabras li {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2vh;
+        margin-right: 1px;
+    }
+    
+    @media (min-width: 600px) {
+        #palabras li {
+            width: 40%;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        #palabras li {
+            width: 20%;
+        }
+    }
+    .muestra {
+        width: 100px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    .box img {
+        width: 50%;
+        height: auto;
+    }
+    
+    .box:hover {
+        border: 3px solid #37D3F7;
+    }
+  </style>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://plataforma.arcadepapel.net/css/materialize.css" type="text/css" rel="stylesheet"
+    media="screen,projection" />
+  <link rel="stylesheet" href="https://plataforma.arcadepapel.net/css/core.css">
+  <link rel="stylesheet" type="text/css" href="https://plataforma.arcadepapel.net/view/comunicacion/1/unidad.css">
+  <link rel="stylesheet" href="https://plataforma.arcadepapel.net/js/ui/jquery-ui.min.css">
+  <script src="https://plataforma.arcadepapel.net/js/jquery-3.4.1.min.js"></script>
+  <script src="https://plataforma.arcadepapel.net/js/ui/jquery-ui.min.js"></script>
+  <script src="https://plataforma.arcadepapel.net/js//ui/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+  <style type="text/css">
+    .ftitle {
+      font-size: 1rem;
+      padding-top: 30px;
+    }
+
+    .ftitulo span {
+      color: #0095DA !important;
+    }
+  </style>
+  <script type="text/javascript">
+    var count = 3;
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://plataforma.arcadepapel.net/view/comunicacion/1/0/1/css/force-lastcape.css">
+</head>
+<div style="transform: translate(0vw, -13vh);
+  color: white;" id="resolucion"></div>
+<img class="logoUnidad">
+<script>$('.logoUnidad').attr("src", "https://plataforma.arcadepapel.net/img/unidades/8.png");</script>
+
+<body>
+
+  <audio id="click" src="https://plataforma.arcadepapel.net/asset/cursor/sound/click.mp3"></audio>
+  <audio id="bien" src="https://plataforma.arcadepapel.net/view/tools/sound/bien.mp3">
+  </audio>
+  <audio id="fallo" src="https://plataforma.arcadepapel.net/view/tools/sound/fallo.mp3">
+  </audio>
+  <div id="vertical"></div>
+   
+
+  <div class="ftitle" id="ftitle"></div>
+  <!-- REMPLAZAMOS ESTE FRAGMENTO POR EL EJERCICIO CORRESPONDIENTE -->
+  <div class="container">
+    <div class="row">
+       <div class="contenedor-ejercicios">
+           <div class="contenedor-img">
+               <img src="./img/1.jpg" alt="">
+           </div>
+            <div class="ejercicio">
+               
+                <div class="contenedor-respuesta">
+                    <span>1</span>
+                    <div class="palabra" alt="ta">
+                    
+                    </div>
+                    <div class="palabra" alt="ble">
+                    
+                    </div>
+                    <div class="palabra" alt="ta">
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="ejercicio">
+                
+                <div class="contenedor-respuesta">
+                    <span>2</span>
+                    <div class="palabra" alt="blan">
+
+                    </div>
+                    <div class="palabra" alt="ca">
+
+                    </div>
+                    <div class="palabra" alt="nie">
+
+                    </div>
+                    <div class="palabra" alt="ves">
+
+                    </div>
+                </div>
+            </div>
+            <div class="ejercicio">
+                
+                <div class="contenedor-respuesta">
+                    <span>3</span>
+                    <div class="palabra" alt="im">
+                    
+                    </div>
+                    <div class="palabra" alt="per">
+                    
+                    </div>
+                    <div class="palabra" alt="di">
+                    
+                    </div>
+                    <div class="palabra" alt="ble">
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="ejercicio">
+               
+                <div class="contenedor-respuesta">
+                    <span>4</span>
+                    <div class="palabra" alt="bi">
+                    
+                    </div>
+                    <div class="palabra" alt="blio">
+                    
+                    </div>
+                    <div class="palabra" alt="te">
+                    
+                    </div>
+                    <div class="palabra" alt="ca">
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="ejercicio">
+               
+                <div class="contenedor-respuesta">
+                    <span>5</span>
+                    <div class="palabra" alt="do">
+                    
+                    </div>
+                    <div class="palabra" alt="blar">
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="ejercicio">
+                
+                <div class="contenedor-respuesta">
+                    <span>6</span>
+                    <div class="palabra" alt="blan">
+                    
+                    </div>
+                    <div class="palabra" alt="co">
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="ejercicio">
+               
+                <div class="contenedor-respuesta">
+                    <span>7</span>
+                    <div class="palabra" alt="blan">
+                    
+                    </div>
+                    <div class="palabra" alt="do">
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="ejercicio">
+                
+                <div class="contenedor-respuesta">
+                    <span>8</span>
+                    <div class="palabra" alt="ta">
+                    
+                    </div>
+                    <div class="palabra" alt="ble">
+                    
+                    </div>
+                    <div class="palabra" alt="ro">
+                    
+                    </div>
+                </div>
+            </div>
+            
+            
+       </div>
+       <ul class="contenedor-silabas">
+            <li class="silabas">
+                <h4 class="pieza" alt="ble">ble</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="ta">ta</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="ta">ta</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="nie">nie</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="ves">ves</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="blan">blan</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="ca">ca</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="per">per</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="im">im</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="di">di</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="ble">ble</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="bi">bi</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="te">te</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="blio">blio</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="ca">ca</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="blar">blar</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="do">do</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="co">co</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="blan">blan</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="do">do</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="blan">blan</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="ta">ta</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="ro">ro</h4>
+            </li>
+            <li class="silabas">
+                <h4 class="pieza" alt="ble">ble</h4>
+            </li>
+    </div>
+</div>
+  <!-- REMPLAZAMOS ESTE FRAGMENTO POR EL EJERCICIO CORRESPONDIENTE -->
+
+
+  </section>
+  <div id="modal1" style="display: none;" class="modal">
+    <div class="modal-content">
+      <h4>Respuesta correcta</h4>
+      <center>
+        <img class="materialboxed" width="80%" src="./img/respuesta.png">
+      </center>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+    </div>
+  </div>
+  <div id="ventana"></div>
+  <div id="correcto" class="modal">
+    <div class="modal-content">
+      <center>
+        <h4>Respuesta correcta <i class="material-icons">sentiment_very_satisfied</i></h4>
+      </center>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-close waves-effect waves-green btn-flat">Listo!</a>
+    </div>
+  </div>
+  <div id="incorrecto" class="modal">
+    <div class="modal-content">
+      <center>
+        <h4>Respuesta Incorrecta <i class="material-icons">sentiment_very_dissatisfied</i></h4>
+      </center>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+    </div>
+  </div>
+  <script src="https://plataforma.arcadepapel.net/js/materialize.min.js"></script>
+  <script src="https://plataforma.arcadepapel.net/js/core.js"></script>
+  <center>
+    <div class="botones">
+      <a title="Ver Respuesta" class="modal-trigger tooltipped" href="#modal1">
+        <div class="btn red pulse btn-floating fixed-action-btn tooltipped" data-position="left"
+          data-tooltip="Ver Respuesta Correcta" id="respuesta">
+          <i class="material-icons">assignment_turned_in</i></div>
+      </a>
+      <div class="btn  btn-floating  btn-small  btn-intentos tooltipped" data-position="top"
+        data-tooltip="Intentos restantes" id="intentos">3</div>
+      <div class="btnEnviar btn-small center" value="" id="boton1" onclick="">Enviar Respuesta</div>
+      <div class="btnCorregir btn-small center" value="" onclick="window.location.reload()">Reiniciar</div>
+      <a class="btn-small btnSiguiente center disabled" id="nextExercise" href="">Siguiente</a>
+    </div>
+  </center>
+
+  <script src="./js/validate.js"></script>
+
+</body>
+
+</html>

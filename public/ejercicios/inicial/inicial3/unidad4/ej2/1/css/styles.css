@@ -1,0 +1,110 @@
+.container-two {
+    margin: 0 auto;
+    width: 80%;
+    height: 68%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/****** Estilos generales ******/
+
+.grid-container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10vh
+}
+
+.lista {
+    margin-right: 10vh;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 1vh;
+    font-size: 1.8em;
+}
+.item span {
+    color: steelblue;
+    margin-right: 1vh;
+}
+.pieza {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor {
+    width: 120px;
+    height: 120px;
+    border: 2px solid orange;
+    border-radius: 50%;
+}
+
+.bn {
+    border: none;
+    pointer-events: none;
+    cursor: none;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.principal {
+    width: auto;
+    height: 95px;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+@media (min-width: 1920px) {
+    .seleccion {
+        width: 60px;
+        height: 60px;
+        font-size: 3em;
+    }
+    .img {
+        width: 100%;
+        height: auto;
+    }
+    .principal {
+        width: auto;
+        height: 85px;
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+}
+
+h5 {
+    width: 80%;
+    font-size: 24px;
+}

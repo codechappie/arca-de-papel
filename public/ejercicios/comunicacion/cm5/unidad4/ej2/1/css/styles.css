@@ -1,0 +1,122 @@
+h5 {
+    width: 85%;
+}
+
+.oracion h4 {
+    text-align: center;
+    color: #20bcdb;
+}
+
+.contenedor-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 85%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.oracion {
+    /* width: 100%; */
+    padding-top: 15px;
+}
+
+.contenedor-check {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+.pregunta {
+    display: flex;
+    align-items: left;
+    font-size: 1.5em;
+    flex-direction: column;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.contenedor {
+    border: 1px solid silver;
+    width: 180px;
+    height: 40px;
+    margin-right: 2vh;
+    margin-left: 2vh;
+}
+
+.pregunta span {
+    color: tomato;
+    margin-right: 1vh;
+    margin-left: 1vh;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid silver;
+    padding: 1vh 3vh;
+    margin: 2vh;
+}
+.option span {
+    color: tomato;
+    margin-right: 2vh;
+    margin-left: 2vh;
+}
+.pieza {
+    font-size: 1.4em;
+}
+.contenedor-check .respuesta {
+    width: 70%;
+    padding: 10px 25px;
+    margin: 5px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.contenedor-check .respuesta:hover {
+    border-color: #20bcdb;
+}
+
+.contenedor-check .respuesta span {
+    font-size: 2rem;
+}
+
+span.celeste {
+    color: #37d3f7;
+}
+
+/************/
+
+/**************/
+
+@media(max-height: 640px) {
+    h4 {
+        font-size: 1.8rem;
+    }
+    .contenedor-oraciones {
+        width: 92%;
+        padding-top: 0;
+    }
+    .contenedor-check {
+        padding-top: 0;
+    }
+    .oracion h5 {
+        font-size: 1.6rem;
+        padding-top: 0;
+    }
+    .contenedor-check .respuesta {
+        width: 80%;
+        padding: 6px 15px;
+    }
+    .contenedor-check .respuesta span {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,125 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    -webkit-border-radius: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    height: 10px;
+    -webkit-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+    width: 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1920px) {
+    .grid-container {
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.grid-item {
+    /* border: 1px solid silver; */
+    /* padding: 0 0 12px 0; */
+    margin: 2vh;
+    font-size: 24px;
+    text-align: center;
+}
+
+.campo-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    width: auto;
+    height: 128px;
+    margin-bottom: 1vh;
+}
+
+.grid-body {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mg {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: red;
+    font-weight: bold;
+}
+
+.select-wrapper input.select-dropdown {
+    border: 1px solid silver;
+    width: 150px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid silver;
+}
+
+.select-wrapper ul {
+    height: 260px;
+}
+
+.select-wrapper {
+    position: relative;
+    margin-left: .5vh;
+    margin-right: 8vh;
+    margin-bottom: 1vh;
+}
+
+.dropdown-content {
+    background-color: #fff;
+    margin: 0;
+    display: none;
+    min-width: 90px;
+    overflow-y: auto;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    width: 90px;
+    border-radius: 12px;
+}
+
+img.principal {
+    width: auto;
+    height: 250px;
+}
+
+.label {
+    font-size: 20px;
+}

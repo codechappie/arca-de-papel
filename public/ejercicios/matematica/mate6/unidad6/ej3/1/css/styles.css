@@ -1,0 +1,99 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 85%;
+}
+
+.container {
+    height: 70%;
+}
+
+.content{
+    width: 80%;
+    margin: auto;    
+    font-size: 24px;
+    margin-top: 5vh;
+}
+.linea{
+    border-bottom: 3px solid red;
+}
+.frac{
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+.frac{
+ margin: 0px 12px;
+}
+
+.fila, .resol{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: right;
+}
+.fio{
+    width: 100%;
+}
+.srt{
+    width: 55px;
+    appearance: none;
+    -moz-appearance: none;
+    -ms-progress-appearance: none;
+    -webkit-appearance: none;
+}
+.fila span{
+    margin: auto;
+}
+.espacio{
+    padding: 0px 130px!important;
+}
+.sinma{
+    margin: 0px;
+    padding: 0px;
+}
+.resol{
+    margin-top: -24px;
+}
+.minesp{
+    padding: 0px 50px;
+}
+.fil{
+    margin-top: 20px;
+    display: flex;
+}
+.item{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+.slarge{
+    width: 245px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+select{
+    border-bottom: 1px solid rgb(158, 158, 158)!important;
+}
+@media screen and (max-height: 850px) {
+
+    .item{
+        font-size: 21px;
+    }
+    .content{
+        margin-top: 1vh;
+    }
+}
+@media screen and (max-width: 1200px) {
+
+    .item{
+        font-size: 21px;
+    }
+    .content{
+        margin-top: 0vh;
+    }
+}

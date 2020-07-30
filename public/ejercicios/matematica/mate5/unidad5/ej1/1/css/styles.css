@@ -1,0 +1,146 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: fit-content;
+    min-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.uno {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.uno p {
+    position: absolute;
+}
+
+.uno img {
+    max-width: 98%;
+    max-height: 98%;
+}
+
+p.izquierda {
+    top: 40px;
+    left: -100px;
+}
+
+p.derecha {
+    top: 40px;
+    right: -100px;
+}
+
+p.centro {
+    bottom: -35px;
+}
+
+.contenedor p {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 5px;
+    margin: 0;
+}
+
+.fraccion {
+    width: max-content;
+    margin: 0 4px;
+}
+
+.item.bt {
+    border-top: 2px solid cornflowerblue;
+}
+
+.operacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+span.select {
+    display: inline-flex;
+    width: fit-content;
+    margin-left: 4px;
+}
+
+span.select select {
+    color: rgb(47, 196, 230);
+    font-size: 1.6rem;
+}
+
+#numeros {
+    align-self: center;
+}
+
+span.a {
+    position: relative;
+}
+
+span.a::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 2px solid cornflowerblue;
+    bottom: 0;
+    right: -12px;
+    transform: rotate(45deg);
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicios {
+        min-width: 1100px;
+    }
+    .contenedor p {
+        font-size: 1.3rem;
+        padding: 2px;
+    }
+    p.centro {
+        bottom: -25px;
+    }
+    p.izquierda {
+        left: -70px;
+    }
+    p.derecha {
+        right: -70px;
+    }
+}

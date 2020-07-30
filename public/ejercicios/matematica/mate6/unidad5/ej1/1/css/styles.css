@@ -1,0 +1,110 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.contenedor-ejercicios {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor {
+    width: 48%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor p {
+    width: fit-content;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 15px 0;
+    margin: 0;
+}
+
+.fraccion {
+    width: max-content;
+    margin: 0 4px;
+}
+
+.item.bt {
+    border-top: 2px solid cornflowerblue;
+}
+
+.operacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 700;
+    padding: 25px 0;
+}
+
+span.select {
+    width: fit-content;
+    display: inline-flex;
+    margin-left: 4px;
+}
+
+span.select select {
+    color: rgb(47, 196, 230);
+    font-size: 1.6rem;
+}
+
+@media(max-width: 1500px) {
+    .contenedor p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .container .row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .operacion{
+        font-size: 1.2rem;
+        padding: 15px 0;
+    }
+    .contenedor{
+        width: 100%;
+    }
+}
+@media screen and (max-height: 950px) {
+    .container .row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .operacion{
+        font-size: 1.2rem;
+        padding: 15px 0;
+    }
+    .contenedor{
+        width: 100%;
+    }
+}

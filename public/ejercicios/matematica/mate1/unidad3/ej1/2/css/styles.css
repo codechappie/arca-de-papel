@@ -1,0 +1,41 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 70%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
+    padding: 10px;
+    font-size: 24px;
+    margin: auto;
+}
+
+.img {
+    border-style: none;
+    height: 100px;
+    width: auto;
+    margin-bottom: 4vh;
+}
+.select-wrapper input.select-dropdown {
+    background: orange !important;
+    color: #ffffff !important;
+}
+
+.box-select {
+    display: flex;
+    justify-content: center;
+}
+.box-igual {
+    margin-right: 1vh;
+}
+.after {
+    margin-right: 1vh;
+}

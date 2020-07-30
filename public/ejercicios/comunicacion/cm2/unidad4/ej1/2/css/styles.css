@@ -1,0 +1,42 @@
+h5 {
+    width: 85%;
+}
+
+.contenedor-ejercicios {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor-ejercicios .ejercicio {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+.ejercicio span {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.ejercicio select {
+    margin-top: 20px;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicios {
+        width: 70%;
+    }
+    .contenedor-ejercicios .ejercicio {
+        width: 100%;
+        padding: 5px 0;
+    }
+    .ejercicio span {
+        font-size: 1.6rem;
+    }
+    .ejercicio select {
+        margin-top: 10px;
+    }
+}

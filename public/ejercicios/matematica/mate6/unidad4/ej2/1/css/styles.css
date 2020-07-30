@@ -1,0 +1,52 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+    justify-items: center;
+}
+.content{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.tabla{
+    width: 600px;
+    margin: auto;
+}
+.fila{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+}
+.lineaLeft{
+    border-left: 2px dotted #333;
+}
+.fila span{
+    margin: 0px 15px;
+}
+
+@media screen and (max-height: 950px) {
+    .container .row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .operacion{
+        font-size: 1.2rem;
+        padding: 15px 0;
+    }
+    .contenedor{
+        width: 100%;
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "primaria": {
+      "0": {
+        "0": {
+          "activo": "1",
+          "titulo": "Comunicación 1",
+          "unidades": {
+            "0": {
+              "nombre": "Unidad 1 - ¡Volvemos al colegio!",
+              "temas": {
+                "0": "Las vocales",
+                "1": "La canción"
+              }
+            },
+            "1": {
+              "nombre": "Unidad 2 - ¡La salud!",
+              "temas": {
+                "0": "Las rimas",
+                "1": "La letra P",
+                "2": "La letra M",
+                "3": "La letra L",
+                "4": "El sustantivo común y propio"
+              }
+            },
+            "2": {
+              "nombre": "Unidad 3 - ¡La familia–unión!",
+              "temas": {
+                "0": "La letra T",
+                "1": "La letra D",
+                "2": "La letra N",
+                "3": "La sílaba"
+              }
+            },
+            "3": {
+              "nombre": "Unidad 4 - ¡Cuido mi alimentación!",
+              "temas": {
+                "0": "La poesía",
+                "1": "La letra F",
+                "2": "La letra B",
+                "3": "La letra V",
+                "4": "La letra R",
+                "5": "El género del sustantivo: femenino y masculino",
+                "6": "El uso de la B y V"
+              }
+            },
+            "4": {
+              "nombre": "Unidad 5 - ¡La patria-Identidad nacional! ",
+              "temas": {
+                "0": "La letra G",
+                "1": "El número del sustantivo: singular y plural",
+                "2": "El uso de la ca, co, cu, que, qui"
+              }
+            },
+            "5": {
+              "nombre": "Unidad 6 - ¡A pasear y las vacaciones a disfrutar!",
+              "temas": {
+                "0": "La descripción de un animal",
+                "1": "El ratón Pérez ",
+                "2": "La letra H",
+                "3": "La letra J",
+                "4": "La letra Ll",
+                "5": "La letra Ñ",
+                "6": "El adjetivo calificativo",
+                "7": "Descripción de un animal: El patito travieso"
+              }
+            },
+            "6": {
+              "nombre": "Unidad 7 - El medio ambiente",
+              "temas": {
+                "0": "Comprensión lectora",
+                "1": "El uso de la za, ce, ci, zo y zu y el plural Z - ces"
+              }
+            },
+            "7": {
+              "nombre": "Unidad 8 - Las costumbres peruanas",
+              "temas": {
+                "0": "Comprensión lectora: Amigas del huerto",
+                "1": "El cuento",
+                "2": "Las palabras con Pr",
+                "3": "Las palabras con Br",
+                "4": "El verbo ",
+                "5": "El cuento"
+              }
+            },
+            "8": {
+              "nombre": "Unidad 9 - ¡Todos somos Defensa civil!",
+              "temas": {
+                "0": "Las palabras con Bl",
+                "1": "Las palabras con Pl",
+                "2": "Las palabras con Gr y Gl",
+                "3": "Las palabras con Cl",
+                "4": "Las palabras con Cr",
+                "5": "La oración: sujeto y predicado",
+                "6": "Los sinónimos y antónimos"
+              }
+            },
+            "9": {
+              "nombre": "Unidad 10 - Tiempo de unión y amor en familia",
+              "temas": {
+                "0": "La Navidad de Isidro",
+                "1": "Las palabras con Tr y Tl",
+                "2": "Las palabras con Fr y Fl",
+                "3": "Las palabras con Dr",
+                "4": "El uso de los signos de interrogación y exclamación"
+              }
+            }
+          }
+        },
+        "materia": "Comunicación"
+      }
+    }
+  }

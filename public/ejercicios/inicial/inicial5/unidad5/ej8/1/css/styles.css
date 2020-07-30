@@ -1,0 +1,152 @@
+.caja-principal {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    height: 60%;
+}
+.content{
+    display: grid;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(2,1fr);
+}
+.image {
+  width: 500px;
+  height: 600px;
+  background-image: url('../img/1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: -9;
+}
+.contenedorRes{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.contenedorRes img{
+  width: 85px;
+}
+.box{
+  width: 85px;
+  height: 85px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  position: absolute;
+}
+.box1{
+  left: 207;
+  top: 77;
+}
+.box2{
+  left: 162;
+  top: 186;
+}
+.box3{
+  left: 253;
+  top: 186;
+}
+.box4{
+  left: 139;
+  top: 294;
+}
+.box5{
+  left: 276;
+  top: 294;
+}
+.box6{
+  left: 207;
+  top: 402;
+}
+.box7{
+  left: 207;
+  top: 510;
+}
+@media screen and (max-width: 1300px){
+  .image{
+    width: 400px;
+    height: 400px;
+  }
+  .contenedorRes img{
+    width: 55px;
+  }
+  .box{
+    width: 55px;
+    height: 55px;
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+  }
+  .box1{
+    left: 172;
+    top: 52;
+  }
+  .box2{
+    left: 142;
+    top: 124;
+  }
+  .box3{
+    left: 203;
+    top: 124;
+  }
+  .box4{
+    left: 125;
+    top: 196;
+  }
+  .box5{
+    left: 218;
+    top: 196;
+  }
+  .box6{
+    left: 172;
+    top: 269;
+  }
+  .box7{
+    left: 172;
+    top: 340;
+  }
+}
+@media screen and (max-height: 800px){
+  .image{
+    width: 400px;
+    height: 400px;
+  }
+  .contenedorRes img{
+    width: 55px;
+  }
+  .box{
+    width: 55px;
+    height: 55px;
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+  }
+  .box1{
+    left: 172;
+    top: 52;
+  }
+  .box2{
+    left: 142;
+    top: 124;
+  }
+  .box3{
+    left: 203;
+    top: 124;
+  }
+  .box4{
+    left: 125;
+    top: 196;
+  }
+  .box5{
+    left: 218;
+    top: 196;
+  }
+  .box6{
+    left: 172;
+    top: 269;
+  }
+  .box7{
+    left: 172;
+    top: 340;
+  }
+}

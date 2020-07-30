@@ -1,0 +1,168 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: 90%;
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.operacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-ejercicios img {
+    width: 350px;
+}
+
+td span {
+    margin: 0 4px;
+}
+
+.fraccion {
+    width: max-content;
+    margin: 0 4px;
+}
+
+.item.bt {
+    border-top: 2px solid cornflowerblue;
+}
+
+table {
+    width: fit-content;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+table tr td {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+table tr th {
+    background-color: rgb(55, 154, 247);
+    color: rgb(255, 255, 255);
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table td span {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+table tr td.azul {
+    background-color: rgb(55, 154, 247);
+    color: white;
+}
+
+table td {
+    padding: 5px 5px;
+}
+
+table tr td span.respuesta {
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    line-height: 3.3rem;
+    margin-bottom: 5px;
+}
+
+.contenedor-palabras {
+    width: fit-content;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+span.palabra {
+    display: inline-block;
+    padding: 4px 8px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin: 0 3px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: white;
+}
+
+td .img {
+    display: flex;
+}
+
+.img img {
+    width: 100px;
+    height: 100px;
+}
+
+span.palabra:hover {
+    border-color: #37D3F7;
+}
+
+td span.select {
+    display: inline-flex;
+    width: fit-content;
+    margin: 4px;
+}
+
+td span.select select {
+    color: rgb(47, 196, 230);
+    font-size: 1.4rem;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicios {
+        width: 80%;
+    }
+    table td {
+        padding: 0px 5px;
+    }
+    table th {
+        padding: 8px 5px;
+    }
+    table td span {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    h5 {
+        font-size: 140%;
+    }
+    select {
+        height: 2.5rem;
+    }
+    .img img {
+        width: 85px;
+        height: 85px;
+    }
+}

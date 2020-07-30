@@ -1,0 +1,37 @@
+//INICIO PLANTILLA - PLANTILLA - PLANTILLA
+dataExercise = {
+  next: "../../../index.html", // Siguiente ejercicio
+  procesar:"result_tipo_4_4_9()", //tal cual esta en la funcion result_tipo_x_x_x() de la parte inferior del archivo index o el archivo validate
+  // El titulo tal cual esta en la carpetade paginacion  ejemplo Comunicacion/1/0/1/pagination.php
+  titulo:"<center><h5><span>Une</span> las sílabas de 2 en 2 o 3 en 3 para formar palabras.</h5></center>",
+} 
+document.getElementById("ftitle").innerHTML = dataExercise.titulo;
+document.getElementById("boton1").setAttribute("onclick", dataExercise.procesar);
+document.getElementById("nextExercise").setAttribute("href", dataExercise.next);
+// FIN PLANTILLA - PLANTILLA - PLANTILLA
+
+
+
+var r = 0;
+
+var clases = ".contenedor-imagenes";
+listar_random(clases);
+
+arrastre();
+function result_tipo_4_4_9() {
+    
+    
+    
+    
+
+    if (r == 5) {
+        
+        
+        correcto();
+    } else {
+        incorrecto();
+        
+        
+    }
+
+}

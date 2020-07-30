@@ -1,0 +1,92 @@
+h5 {
+    width: 80%;
+}
+
+
+.oracion h4 {
+    text-align: center;
+    color: #20bcdb;
+}
+.contenedor-two{
+    width: 80%;
+    margin: auto;
+    padding-top: 6vh;
+}
+.content{
+    width: 90%;
+    margin: auto;
+}
+.title{
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 20px;
+    
+}
+.info p{
+    font-size: 25px;
+}
+.cajas{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    margin-bottom: 4vh;
+    font-weight: 600;
+}
+.info p span{
+    padding: 3px 120px;
+    height: 50px;
+    border-bottom: 2px solid #333;
+}
+.item{
+    text-align: center;
+    width: 220px;
+    font-size: 15px;
+    padding: 2px 10px;
+    margin: 10px;
+    font-size: 16px;
+    border: 2px solid #333;
+}
+.item img{
+    width: 170px;
+}
+.image{
+    width: 1100px;
+    margin: auto;
+    height: 150px;
+    background-image: url('../img/7.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.box{
+    border: 1px solid rgba(0, 84, 211, 0);
+    width: 175px;
+    height: 80px;
+    position: absolute;
+    bottom: 25px;
+}
+.box1{
+    left: 5px;
+}
+.box2{
+    left: 190px;
+}
+.box3{
+    left: 372px;
+}
+.box4{
+    left: 555px;
+}
+.box5{
+    left: 739px;
+}
+.box6{
+    left: 921px;
+}
+@media(max-height: 750px) {
+    .info{
+        font-size: 16px;
+    }
+}

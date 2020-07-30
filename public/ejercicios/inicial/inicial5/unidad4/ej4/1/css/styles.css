@@ -1,0 +1,82 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 70%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pincel{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+    grid-column-gap: 20px;    
+}
+.pincel img{
+    width: 140px;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+}
+.imd{
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.item {
+    padding: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 160px;
+    position: relative;
+}
+.item img{
+    width: 300px;
+}
+.lineTest{
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    border: 2px solid rgb(2, 162, 255);
+    bottom: 0;
+}
+.line1{
+    left: 320px;
+}
+.line2{
+    left: 490px;
+}
+.line3{
+    left: 650px;
+}
+.line4{
+    left: 810px;
+}
+@media screen and (max-width: 1300px){
+    .container-two {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 70%;
+        height: 65%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .pincel img{
+        width: 120px;
+    }
+    .pincel{
+        padding-bottom: 10px;
+    }
+}

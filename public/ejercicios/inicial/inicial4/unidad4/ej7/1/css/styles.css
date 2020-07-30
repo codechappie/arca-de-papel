@@ -1,0 +1,92 @@
+h5 {
+    width: 80%;
+}
+
+.container {
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-ejercicios {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contenedor-img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid silver;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.contenedor-img img {
+    max-width: 95%;
+    max-height: 99%;
+}
+
+.seis,
+.siete,
+.ocho {
+    position: relative;
+}
+
+.seis::before,
+.siete::before,
+.ocho::before {
+    content: '';
+    width: 40px;
+    font-size: 3rem;
+    color: #32db65;
+    text-align: center;
+    display: block;
+    top: -50px;
+    left: calc(50% - 20px);
+    position: absolute;
+}
+
+.seis::before {
+    content: '6';
+}
+
+.siete::before {
+    content: '7';
+}
+
+.ocho::before {
+    content: '8';
+}
+
+
+/************/
+
+
+/**************/
+
+@media(max-height: 640px) {
+    .contenedor-img {
+        width: 90px;
+        height: 90px;
+    }
+    .seis::before,
+    .siete::before,
+    .ocho::before {
+        font-size: 2.5rem;
+        top: -35px;
+    }
+}

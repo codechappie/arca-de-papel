@@ -1,0 +1,124 @@
+h5 {
+    width: 80%;
+    font-size: 24px;
+}
+
+@media (min-width: 1920px) {
+    h5 {
+        font-size: 200%;
+    }
+}
+
+.contenedor-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    height: 62%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+/* Parte 1 */
+
+.opciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.pieza {
+    margin: 1vh;
+    z-index: 1;
+}
+
+/* Parte 2 */
+
+.esquema {
+    position: relative;
+    width: 270px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vh;
+}
+
+.principal {
+    width: 100%;
+    height: auto;
+}
+
+.img {
+    width: auto;
+    height: 50px;
+}
+
+.contenedor {
+    position: absolute;
+    width: 258px;
+    height: 60px;
+    /* background: #000000ab; */
+    background: transparent !important;
+}
+
+.c1 {
+    top: 228px;
+    left: 5px;
+}
+
+.c2 {
+    top: 228px;
+    left: 5px;
+}
+
+.c3 {
+    right: 5px;
+    top: 228px;
+}
+
+.c4 {
+    top: 228px;
+    right: 5px;
+}
+
+/* Responsive */
+
+@media (min-width: 1920px) {
+    .esquema {
+        width: 340px;
+    }
+    .contenedor {
+        width: 328px;
+        height: 70px;
+    }
+    .c1 {
+        top: 252px;
+        left: 5px;    
+    }
+    .c2 {
+        left: 5px;
+        top: 252px;
+    }
+    .c3 {
+        right: 5px;
+        top: 252px;
+    }
+    .c4 {
+        top: 252px;
+        right: 5px;
+    }
+    .img {
+        width: auto;
+        height: 58px;
+    }
+}

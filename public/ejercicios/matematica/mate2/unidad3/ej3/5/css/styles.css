@@ -1,0 +1,129 @@
+.container-two {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  flex-direction: column;
+}
+
+:root {
+  --width-grid-item: 560px;
+}
+
+::-webkit-scrollbar {
+  -webkit-border-radius: 5px;
+  background-color: transparent;
+  border-radius: 5px;
+  height: 10px;
+  -webkit-transition: background-color .2s linear;
+  -o-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+  width: 0px;
+}
+.cajada{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.cabecera{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 5fr;
+  padding: 20px;
+  background-color: rgb(11, 160, 247);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+.cuerpo .fila{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 5fr;
+  padding: 12px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid rgb(231, 231, 231);
+  justify-items: center;
+}
+.selectorsUno{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.selectorDos{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.selectorTres{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+/*SELECT SECUNDARIO*/
+
+
+.select-wrapper input.select-dropdown {
+  border: 1px solid silver;
+  width: 40px;
+  height: 30px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 15px;
+  color: #02af7b;
+}
+
+.select-wrapper input.select-dropdown:focus {
+  border-bottom: 1px solid silver;
+}
+
+.select-wrapper ul {
+  height: 250px;
+}
+
+.select-wrapper {
+  position: relative;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  font-size: 12px;
+}
+
+.dropdown-content {
+  background-color: #fff;
+  margin: 0;
+  display: none;
+  min-width: 40px;
+  overflow-y: auto;
+  opacity: 0;
+  position: absolute;
+  font-size: 12px;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  width: 40px;
+  border-radius: 2px!important;
+}
+.dropdown-content li > a, .dropdown-content li > span {
+  font-size: 16px;
+  color: #07a3fd;
+  display: block;
+  line-height: 22px;
+  padding: 11px 4px;
+  text-align: center;
+}
+@media screen and (max-width: 1300px){
+  .dropdown-content li > a, .dropdown-content li > span {
+      font-size: 16px;
+      color: #26a69a;
+      display: block;
+      line-height: 22px;
+      padding: 11px 4px;
+      text-align: center;
+  }
+}

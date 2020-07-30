@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arca de Papel</title>
+  <!-- CSS  -->
+  <style type="text/css">
+    .svg{
+        width: 1200px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .colores img{
+      width: 50px;
+      margin: 2vh;
+      border-radius: 18%;
+    }
+    #contenedorpuzzle{
+    width: 80%;
+    margin: 10vh auto;
+    }
+    .item img{
+      width: 250px ;
+      margin: 3 20px 0;
+      float: left;
+      border:solid transparent;           
+    }
+   .item img:hover{
+    border:solid;
+    }   
+    h5 {
+    font-size: 200%;
+    }
+    .img-principal{
+      margin: 5vh auto 0;
+    }
+    .fila1, .fila2, .fila3{
+      margin: 0 auto 2vh;
+      width: 1160px;
+      box-shadow: 0 0 5px #80808061;
+    }
+    .container, .content-wrapper{
+        margin: 10vh auto 0;
+    }
+    .fila1 img{
+      width: 20vw;
+      margin:0 auto;
+    }
+
+    @media (max-width: 1200px){
+      .container, .content-wrapper{
+        margin: 42px auto 0;
+    }
+    }
+
+    #imgIzquierda li, #imgDerecha li{
+        width: 300px;
+        height: 180px;
+        border: 1px solid silver;
+        position: relative;
+        /* padding: 5px 32px; */
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #imgIzquierda li:hover,  #imgDerecha li:hover{
+        background-color: silver;
+    }
+
+
+    #imgIzquierda img, #imgDerecha img{
+        
+          max-height: 98%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+     
+
+    }
+    .campo{
+      float: left;
+    }
+    ul{
+      margin: 0;
+    }
+    .a span, .b span{
+      font-size: 25px;
+      text-align: center;
+      line-height: 34px;
+      font-weight: 600;
+    }
+    .b span span, .a span span{
+      color: #37D3F7;
+    }
+    
+
+    h4{
+      font-size: 1.9rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media( max-height: 640px){
+      .container{
+        margin: 20px auto 0;
+      }
+      #imgIzquierda li, #imgDerecha li{
+        height: 140px;
+
+      }
+      .a span, .b span{
+      font-size: 25px;
+      line-height: 31px;
+      }
+    }
+
+  </style>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://plataforma.arcadepapel.net/css/materialize.css" type="text/css" rel="stylesheet"
+    media="screen,projection" />
+  <link rel="stylesheet" href="https://plataforma.arcadepapel.net/css/core.css">
+  <link rel="stylesheet" type="text/css" href="https://plataforma.arcadepapel.net/view/comunicacion/1/unidad.css">
+  <link rel="stylesheet" href="https://plataforma.arcadepapel.net/js/ui/jquery-ui.min.css">
+  <script src="https://plataforma.arcadepapel.net/js/jquery-3.4.1.min.js"></script>
+  <script src="https://plataforma.arcadepapel.net/js/ui/jquery-ui.min.js"></script>
+  <script src="https://plataforma.arcadepapel.net/js//ui/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+  <style type="text/css">
+    .ftitle {
+      font-size: 1rem;
+      padding-top: 30px;
+    }
+
+    .ftitulo span {
+      color: #0095DA !important;
+    }
+  </style>
+  <script type="text/javascript">
+    var count = 3;
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://plataforma.arcadepapel.net/view/comunicacion/1/0/1/css/force-lastcape.css">
+</head>
+<div style="transform: translate(0vw, -13vh);
+  color: white;" id="resolucion"></div>
+<img class="logoUnidad">
+<script>$('.logoUnidad').attr("src", "https://plataforma.arcadepapel.net/img/unidades/0.png");</script>
+
+<body>
+
+  <audio id="click" src="https://plataforma.arcadepapel.net/asset/cursor/sound/click.mp3"></audio>
+  <audio id="bien" src="https://plataforma.arcadepapel.net/view/tools/sound/bien.mp3">
+  </audio>
+  <audio id="fallo" src="https://plataforma.arcadepapel.net/view/tools/sound/fallo.mp3">
+  </audio>
+  <div id="vertical"></div>
+   

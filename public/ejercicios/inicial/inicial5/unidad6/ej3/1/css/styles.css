@@ -1,0 +1,77 @@
+.caja-principal {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    height: 60%;
+}
+.content{
+    display: grid;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 2fr;
+}
+.image {
+  width: 700px;
+  height: 600px;
+  background-image: url('../img/1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: -9;
+}
+.contenedorRes{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.contenedorRes img{
+  width: 125px;
+}
+.box{
+  width: 115px;
+  height: 115px;
+  border: 1px solid rgb(0, 0, 0);
+  position: absolute;
+}
+.box1{
+  left: 258;
+  top: 240;
+}
+.box2{
+  left: 410;
+  top: 240;
+}
+.box3{
+  left: 559;
+  top: 240;
+}
+@media screen and (max-width: 1300px){
+  .image{
+    width: 500px;
+    height: 400px;
+  }
+  .box{
+    width: 82px;
+    height: 82px;
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+  }
+  .box1{
+    left: 185;
+    top: 157;
+  }
+  .box2{
+    left: 292;
+    top: 157;
+  }
+  .box3{
+    left: 399;
+    top: 157;
+  }
+}
+@media screen and (max-height: 800px){
+  
+}

@@ -1,0 +1,187 @@
+h4 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-top: 50px;
+    margin: auto;
+}
+
+table {
+    border-collapse: separate;
+}
+
+table tr {
+    border-bottom: none;
+}
+
+table tr td {
+    text-align: center;
+}
+
+table tr td .table-linea {
+    width: 100%;
+    height: 6px;
+    background-color: royalblue;
+}
+
+table tr td .table-linea-vertical {
+    width: 6px;
+    height: 20px;
+    margin: auto;
+    background-color: royalblue;
+}
+
+table tr td .linea-diagonal {
+    background-image: url(../img/1.png);
+    background-size: contain;
+    background-position: center center;
+    height: 80px;
+    background-repeat: no-repeat;
+}
+
+table tr td .linea-diagonal.xs {
+    transform: rotate(65deg);
+}
+
+table tr td.table-item {
+    border: 3px dashed silver;
+    border-radius: 12px;
+}
+
+table tr td.table-item span {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+table tr td.table-item .table-respuesta {
+    width: 190px;
+    height: 45px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin: auto;
+}
+
+table tr td.table-item .table-respuesta.solido {
+    position: relative;
+}
+
+table tr td.table-item .table-respuesta.solido::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 130%;
+    height: 90px;
+    top: -120px;
+    left: 30px;
+    background-image: url(../img/1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(340deg);
+}
+
+table tr td.table-item .table-respuesta.solido::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 130%;
+    height: 90px;
+    bottom: -120px;
+    left: 30px;
+    background-image: url(../img/1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(20deg);
+}
+
+table tr td.table-item .table-respuesta.table-titulo {
+    width: 250px;
+    height: 45px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin: auto;
+}
+
+
+/************/
+
+.contenedor-silabas {
+    display: inline-flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-left: 5%;
+    padding-top: 40px;
+}
+
+.contenedor-silabas .silabas {
+    margin: 0px 5px;
+}
+
+.silabas h4 {
+    display: inline-block;
+    font-size: 1.7rem;
+    background-color: #37D3F7;
+    font-weight: bold;
+    padding: 3px 15px;
+    border-radius: 12px;
+}
+
+.palabrax h4 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/**************/
+
+@media(max-height: 640px) {
+    .row {
+        display: flex;
+        align-items: center;
+        width: 90%;
+    }
+    .contenedor-silabas {
+        width: 30%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .silabas {
+        text-align: center;
+    }
+    .silabas h4 {
+        margin: 10px;
+    }
+    .contenedor-ejercicios {
+        width: 65%;
+        padding-top: 25px;
+        margin-left: 5%;
+    }
+    .ejercicio .imagen-palabra {
+        width: 350px;
+    }
+    .contenedor-silabas {
+        padding-top: 16px;
+    }
+    .ejercicio .contenedor-respuesta p span.palabra {
+        width: 160px;
+    }
+}

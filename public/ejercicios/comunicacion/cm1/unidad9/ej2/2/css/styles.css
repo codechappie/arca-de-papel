@@ -1,0 +1,90 @@
+h4 {
+    text-align: center;
+}
+
+.contenedor-ejercicio {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.contenedor-oracion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    width: 33%;
+}
+
+.contenedor-oracion span {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin: 0 7px;
+}
+
+.contenedor-oracion .palabra {
+    width: 75px;
+    height: 45px;
+    border: 3px solid silver;
+    border-radius: 12px;
+}
+
+.contenedor-oracion img {
+    height: 80px;
+    width: auto;
+}
+
+
+/************/
+
+.contenedor-silabas {
+    display: inline-flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-left: 5%;
+    padding-top: 40px;
+}
+
+.contenedor-silabas .silabas {
+    margin: 0px 5px;
+}
+
+.silabas h4 {
+    display: inline-block;
+    font-size: 1.8rem;
+    background-color: #37D3F7;
+    font-weight: bold;
+    padding: 3px 15px;
+    border-radius: 12px;
+}
+
+
+/**************/
+
+@media(max-height: 640px) {
+    .row {
+        display: flex;
+        padding: 50px;
+    }
+    .contenedor-ejercicio {
+        width: 80%;
+        padding-top: 0px;
+    }
+    .contenedor-oracion {
+        padding-top: 0;
+        width: 50%;
+    }
+    .contenedor-silabas {
+        width: 20%;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+    .contenedor-silabas {
+        align-items: center;
+    }
+    .contenedor-silabas li h4 {
+        margin: 10px;
+    }
+}

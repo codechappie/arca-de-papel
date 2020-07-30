@@ -1,0 +1,72 @@
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor-ejercicios {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    
+}
+
+.row .contenedor-imagen {
+    width: 50%;
+    text-align: center;
+}
+
+.row .contenedor-imagen img {
+    max-width: 450px;
+}
+
+.contenedor-ejercicios .ejercicio {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.ejercicio .contenedor-img {
+    width: 40%;
+    text-align: center;
+}
+
+.ejercicio .contenedor-texto {
+    width: 80%;
+}
+
+.ejercicio .contenedor-texto p {
+    font-size: 1.5rem;
+}
+
+.ejercicio .contenedor-texto p span select {
+    color: rgb(47, 196, 230);
+    width: 400px;
+}
+
+.ejercicio .contenedor-img img {
+    max-width: 100%;
+    max-height: 190px;
+}
+
+.contenedor-texto p span {
+    display: inline-flex;
+    width: 180px;
+}
+
+@media(max-height: 640px) {
+    .row .contenedor-imagen img {
+        max-width: 65%;
+    }
+}

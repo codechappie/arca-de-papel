@@ -1,0 +1,56 @@
+    h4 {
+        text-align: center;
+    }
+    
+    h5 {
+        width: 85%;
+    }
+    
+    .container {
+        display: flex;
+        height: 70%;
+        align-items: center;
+    }
+    
+    .container .row {
+        width: 100%;
+    }
+    
+    .contenedor-ejercicio {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+    /**********************/
+    
+    ul#alfabeto {
+        padding: 18px 15px 18px 15px;
+        background-color: #52cff5;
+    }
+    
+    ul#alfabeto li {
+        border: 3px dashed white;
+        background-color: #45b9e7;
+        color: white;
+        margin: 8px;
+        padding: 15px 0;
+    }
+    
+    ul#alfabeto li span {
+        font-size: 1.8rem;
+        line-height: .5rem;
+        font-weight: 700;
+    }
+    /*******************/
+    
+    @media(max-height: 640px) {
+        ul#alfabeto {
+            padding: 8px 8px 8px 8px;
+        }
+        ul#alfabeto li {
+            padding: 7px 0;
+        }
+        ul#alfabeto li span {
+            font-size: 1.5rem;
+        }
+    }

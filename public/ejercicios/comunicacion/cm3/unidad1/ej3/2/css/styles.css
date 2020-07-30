@@ -1,0 +1,88 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.ejercicio {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ejercicio-item {
+    width: 33%;
+    text-align: center;
+}
+
+.row-img {
+    max-width: 190px;
+    max-height: 190px;
+    margin: 0 auto;
+}
+
+.contenedor-ejercicios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+.letrax {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 30px;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.letra:hover {
+    width: auto;
+}
+
+.letra:hover .guion {
+    display: flex;
+}
+
+.letrax span {
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.guion {
+    display: flex;
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+    font-weight: bold;
+}
+
+.letra .guion {
+    display: none;
+}
+
+
+/************/
+
+
+/**************/
+
+@media(max-height: 640px) {}

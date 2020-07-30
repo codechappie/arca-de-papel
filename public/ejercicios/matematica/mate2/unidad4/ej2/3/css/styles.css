@@ -1,0 +1,57 @@
+.container-two {
+  padding-top: 4vh;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.fila{
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+.numero{
+  background-color: rgb(255, 80, 80);
+  color: #fff;
+  font-size: 24px;
+  width: 70px;
+  height: 70px;
+  margin: 0px 2px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.amarillo{
+  background-color: rgb(255, 236, 128);
+  color: #000;
+}
+.rpta{
+  padding-top: 15px;
+  
+}
+.contenedor{
+  border: 1px solid rgb(255, 231, 15);
+  width: 70px;
+  height: 70px;
+}
+.respuestas{
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+.pieza{
+  background-color: rgb(255, 173, 21);
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
+  width: 55px;
+  height: 55px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}

@@ -1,0 +1,54 @@
+.container-two {
+    margin: 3vh auto 0;
+    max-width: 1280px;
+    width: 70%;
+}
+
+@media (max-width: 1200px) {
+    .container-two {
+        margin: 42px auto 0;
+    }
+}
+
+.svg {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* .campo {} */
+
+#Izquierda ul, #Centro ul, #Derecha ul {
+    margin: 0;
+}
+
+#Izquierda li, #Centro li, #Derecha li {
+    width: 170px;
+    height: 64px;
+    border: 1px solid silver;
+    position: relative;
+    padding: 5px 0px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Izquierda li:hover, #Centro li:hover, #Derecha li:hover {
+    background-color: silver;
+}
+
+/* .ListA {}
+
+.ListB {}
+
+.ListC {} */
+
+/* .b span, .a span {
+    font-size: 30px;
+    line-height: 80px;
+    /* font-weight: 600; 
+  } */

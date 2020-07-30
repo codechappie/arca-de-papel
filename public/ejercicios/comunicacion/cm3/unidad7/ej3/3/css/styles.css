@@ -1,0 +1,101 @@
+h4 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.ejercicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ejercicio .imagen-palabra {
+    width: 450px;
+    display: flex;
+    padding-top: 35px;
+    justify-content: center;
+}
+
+.ejercicio .imagen-palabra img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.ejercicio .contenedor-respuesta {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding-top: 15px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ejercicio .contenedor-respuesta p {
+    text-align: left;
+    font-size: 1.7rem;
+}
+
+.ejercicio .contenedor-respuesta p span.palabra {
+    display: inline-flex;
+    width: 165px;
+    height: 50px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin: 5px;
+    color: transparent;
+}
+
+span.celeste {
+    color: #37d3f7;
+}
+
+span.select {
+    display: inline-flex;
+    width: 215px;
+}
+
+span.select select {
+    color: rgb(47, 196, 230);
+    font-size: 1.3rem;
+    margin: 4 10px;
+}
+
+@media(max-height: 640px) {
+    .row {
+        display: flex;
+        align-items: center;
+        width: 90%;
+    }
+    .contenedor-ejercicios {
+        width: fit-content;
+        padding-top: 25px;
+    }
+    .contenedor-silabas {
+        padding-top: 16px;
+    }
+    .ejercicio .contenedor-respuesta p {
+        margin: 3px;
+        font-size: 1.6rem;
+    }
+}

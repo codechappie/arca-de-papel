@@ -1,0 +1,91 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 1920px) {
+    .img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    margin-top: 2vh;
+}
+
+.grid-item {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor {
+    width: 50px;
+    height: 50px;
+    border: 2px solid silver;
+    border-radius: 12px;
+}
+
+.span-before {
+    margin-right: 10px;
+}
+
+.span-after {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ul.opciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li.pieza {
+    background: orange;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-right: 1vh;
+}
+
+.pieza span {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.s {
+    color: tomato;
+    font-weight: 600;
+}

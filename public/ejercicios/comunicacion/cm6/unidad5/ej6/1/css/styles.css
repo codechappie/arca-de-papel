@@ -1,0 +1,234 @@
+h5 {
+    width: 80%;
+}
+
+.oracion h4 {
+    text-align: center;
+    color: #20bcdb;
+}
+.contenedor-two{
+    width: 80%;
+    margin: auto;
+    padding-top: 6vh;
+    height: 65%;
+    display: grid;
+    align-items: center;
+}
+.content{
+    width: 90%;
+    margin: auto;
+}
+.title{
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.info{
+    font-size: 20px;
+}
+.cajas{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    margin-bottom: 4vh;
+}
+
+.info p span{
+    padding: 3px 80px;
+    height: 50px;
+    border-bottom: 2px solid #333;
+}
+.item{
+    text-align: center;
+    width: auto;
+    font-size: 18px;
+    padding: 6px 4px;
+    margin: 10px;
+    font-size: 16px;
+    border: 2px solid rgb(255, 187, 1);
+    background-color: rgb(255, 207, 151);
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    line-height: 24px;
+}
+.pieza{
+    font-size: 19px;
+    font-weight: 400;
+}
+.item img{
+    width: 170px;
+}
+.image{
+    width: 1100px;
+    margin: auto;
+    height: 150px;
+    background-image: url('../img/7.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.box{
+    border: 1px solid rgba(0, 84, 211, 0);
+    width: 175px;
+    height: 80px;
+    position: absolute;
+    bottom: 25px;
+}
+.info p{
+    line-height: 50px;
+    font-size: 24px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 2fr;
+}
+.options{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+}
+.options > .item{
+    width: auto;
+    max-width:  500px;
+    font-weight: 600;
+}
+.box1{
+    left: 5px;
+}
+.box2{
+    left: 190px;
+}
+.box3{
+    left: 372px;
+}
+.box4{
+    left: 555px;
+}
+.box5{
+    left: 739px;
+}
+.box6{
+    left: 921px;
+}
+.main-contenedor{
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    background-color: rgb(255, 231, 194);
+    border: 2px solid rgb(255, 105, 67);
+}
+.main-contenedor > div{
+    height: auto;
+    min-height: 80px;
+    max-height: 120px;
+    font-size: 18px;
+    border: 1px solid rgb(255, 105, 67);
+    display: grid;
+    align-items: center;
+    font-weight: 600;
+    text-align: center;
+    justify-items: center;
+}
+.main-contenedor > div p{
+    margin: 0;
+    line-height: 30px;
+    padding-left: 20px;
+    font-size: 24px;
+}
+.contenedor{
+    padding: 40px 350px;
+}
+@media(max-height: 800px) {
+    .info{
+        font-size: 16px;
+    }
+    .item{
+        text-align: center;
+        width: auto;
+        font-size: 18px;
+        padding: 4px 4px;
+        margin: 2px;
+        font-size: 13px;
+        border: 2px solid rgb(255, 187, 1);
+        background-color: rgb(255, 207, 151);
+        border-radius: 10px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        line-height: 24px;
+    }
+    .pieza{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .contenedor-two {
+        padding-top: 0px;
+    }
+    .main-contenedor > div{
+        height: auto;
+        min-height: 50px;
+        max-height: 120px;
+        font-size: 16px;
+        border: 1px solid rgb(255, 105, 67);
+        display: grid;
+        align-items: center;
+        font-weight: 600;
+    }
+    .main-contenedor > div p{
+        margin: 0;
+        line-height: 20px;
+        padding: 5px;
+        padding-left: 10px;
+    }
+    .contenedor{
+        padding: 40px 300px
+    }
+}
+@media(max-width: 1390px) {
+    .info{
+        font-size: 16px;
+    }
+    .item{
+        text-align: center;
+        width: auto;
+        font-size: 18px;
+        padding: 4px 4px;
+        margin: 2px;
+        font-size: 13px;
+        border: 2px solid rgb(255, 187, 1);
+        background-color: rgb(255, 207, 151);
+        border-radius: 10px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        line-height: 24px;
+    }
+    .pieza{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .contenedor-two {
+        padding-top: 0px;
+    }
+    .main-contenedor > div{
+        height: auto;
+        min-height: 70px;
+        max-height: 120px;
+        font-size: 16px;
+        border: 1px solid rgb(255, 105, 67);
+        display: grid;
+        align-items: center;
+        font-weight: 600;
+    }
+    .main-contenedor > div p{
+        margin: 0;
+        line-height: 20px;
+        padding: 5px;
+        padding-left: 10px;
+    }
+    .contenedor{
+        padding: 30px 300px
+    }
+}

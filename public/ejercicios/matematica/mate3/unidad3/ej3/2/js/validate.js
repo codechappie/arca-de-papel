@@ -1,0 +1,81 @@
+let array = [];
+let options = '<option value="" disabled selected></option>';
+
+
+for (let i = 0; i < array.length; i++) {
+    options += `<option value="${array[i]}">${array[i]}</option>`
+}
+
+
+$('.slc').html(options);
+
+
+$('select').formSelect();
+
+dataExercise = {
+    next: "../3/index.html",
+    procesar: "result_tipo_3_2_10()",
+    titulo: "<center><h5><span>Arrastra</span> el número antecesor y sucesor de los siguientes números.</h5></center>",
+}
+
+document.getElementById("ftitle").innerHTML = dataExercise.titulo;
+document.getElementById("boton1").setAttribute("onclick", dataExercise.procesar);
+document.getElementById("nextExercise").setAttribute("href", dataExercise.next);
+
+
+
+var rpta = 0, otros = 0, element, element2;
+
+    $(".obj").draggable({
+        revert:false,
+        start: function() {
+            element=$(this).attr("data-value"); 
+            
+        },
+        // finish: function(){
+        //     $(this).css("box-shadow","none");
+        // }
+        
+    });
+    $( ".droppable" ).droppable({
+      classes: {
+        "ui-droppable-active": "",
+        "ui-droppable-hover": "dropable-hover"
+      },
+      drop: function( event, ui ) {
+        element2 = $(this).attr("data-value");
+        $(this).css("background-color", "rgb(253, 168, 57");
+      //  $( this ).target.append(event.target);    
+        
+
+        if(element == element2 ){
+          rpta++;
+          console.log(rpta)
+        }else{
+          otros++;
+          console.log(rpta)
+        }
+        ui.draggable.draggable("disable", 1);
+      }
+    });
+
+function result_tipo_3_2_10() {
+
+    if (rpta == 10) {
+        correcto();
+
+    } else {
+        incorrecto();
+
+    }
+}
+
+var cols = document.querySelectorAll('.aleatorio');
+
+[].forEach.call(cols, (e) => {
+
+    for (var i = e.children.length; i >= 0; i--) {
+        e.appendChild(e.children[Math.random() * i | 0]);
+    }
+
+});

@@ -1,0 +1,220 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1380px;
+    width: 88%;
+    height: 66%;
+    display: grid;
+    justify-items: center;
+}
+.containerPrincipal{
+    display: grid;
+    grid-template-columns: 2fr 4fr 5fr;
+    justify-items: center;
+    align-items: center;
+}
+.row .col {
+    text-align: center;
+}
+.uno{
+    grid-column: 1/2;
+}
+.dos{
+    grid-column: 2/3;
+}
+.tres{
+    text-align: center;
+    grid-column: 3/5;
+}
+.tres .grid-container {
+    justify-items: left;
+}
+.tres .grid-item .select-wrapper input.select-dropdown {
+    width: 130px;
+}
+.dos .grid-item .select-wrapper input.select-dropdown {
+    height: 40px;
+    width: 50px;
+    margin-right: 5px;
+    padding: 4px;
+}
+.tres .select-wrapper ul {
+    max-height: 200px;
+}
+
+.titulo h6{
+    font-size: 24px;
+    margin: 10px 0px;
+    color: rgb(0, 162, 255);
+}
+::-webkit-scrollbar {
+    -webkit-border-radius: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    height: 10px;
+    -webkit-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+    width: 0px;
+}
+
+.grid-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto;
+    /* padding: 10px; */
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 2px solid silver; */
+    /* padding: 2px; */
+    font-size: 18px;
+    text-align: center;
+    margin: .5vh;
+    /* width: 200px; */
+}
+
+.img {
+    width: 400px;
+    height: auto;
+    background: #fff;
+}
+
+.pregunta {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.pregunta img{
+    width: 70px;
+}
+/* Select */
+
+.select-wrapper input.select-dropdown {
+    border: 1px solid silver;
+    width: 90px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid silver;
+}
+
+.select-wrapper ul {
+    height: 250px;
+}
+
+.select-wrapper {
+    position: relative;
+    margin-left: 2vh;
+    margin-right: .5vh;
+}
+
+.dropdown-content {
+    background-color: #fff;
+    margin: 0;
+    display: none;
+    min-width: 90px;
+    overflow-y: auto;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    width: 90px;
+    border-radius: 12px;
+}
+@media screen and (max-width: 1450px){
+    .containerPrincipal{
+        display: grid;
+        grid-template-columns: 2fr 5fr;
+        justify-items: center;
+        align-items: center;
+    }
+    .uno{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .dos{
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .tres{
+        text-align: center;
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+    .tres .grid-container {
+        grid-template-columns: auto;
+    }
+    .dos .grid-item{
+        margin: 10px 20px;
+    }
+    #barco{
+        width: 50px;
+    }
+    .grid-container {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: auto auto auto;
+        /* padding: 10px; */
+    }
+    .select-wrapper input.select-dropdown {
+        border: 1px solid silver;
+        width: 60px;
+        height: 35px;
+        margin: 0;
+        font-weight: 600;
+        font-size: 17px;
+    }
+    .dropdown-content {
+        width: 60px;
+    }
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        /* border: 2px solid silver; */
+        /* padding: 2px; */
+        font-size: 16px;
+        text-align: center;
+        margin: .5vh;
+        /* width: 200px; */
+    }
+    
+}
+@media screen and (max-height: 1300px){
+    .dropdown-content {
+        min-width: 30px;
+        width: 40px;
+    }
+    center h5{
+        font-size: 20px;
+    }
+    .select-wrapper input.select-dropdown {
+        border: 1px solid silver;
+        width: 40px;
+        height: 35px;
+        margin: 0;
+        font-weight: 600;
+        font-size: 17px;
+    }
+}
+@media screen and (max-height: 650px){
+    .uno img{
+        width: 300px;
+    }
+    .containerPrincipal{
+        margin-top: 5vh;
+    }
+}
+@media screen and (max-height: 600px){
+    .uno img{
+        width: 300px;
+    }
+    .containerPrincipal{
+        margin-top: 2vh;
+    }
+}

@@ -1,0 +1,130 @@
+h4 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.ejercicio {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ejercicio .imagen-palabra {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.ejercicio .imagen-palabra img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.ejercicio .contenedor-respuesta {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 15px;
+    align-items: center;
+}
+
+.ejercicio .contenedor-respuesta p {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.ejercicio .contenedor-respuesta p span.palabra {
+    display: inline-flex;
+    width: 180px;
+    height: 50px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin: 5px;
+    color: transparent;
+}
+
+
+/************/
+
+.contenedor-silabas {
+    display: inline-flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-left: 5%;
+    padding-top: 40px;
+}
+
+.contenedor-silabas .silabas {
+    margin: 0px 5px;
+}
+
+.silabas h4 {
+    display: inline-block;
+    font-size: 1.8rem;
+    background-color: #37D3F7;
+    font-weight: bold;
+    padding: 3px 15px;
+    border-radius: 12px;
+}
+
+.palabrax h4 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/**************/
+
+@media(max-height: 640px) {
+    .row {
+        display: flex;
+        align-items: center;
+        width: 90%;
+    }
+    .contenedor-silabas {
+        width: 30%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .silabas {
+        text-align: center;
+    }
+    .silabas h4 {
+        margin: 10px;
+    }
+    .contenedor-ejercicios {
+        width: 70%;
+        padding-top: 25px;
+    }
+    .ejercicio .imagen-palabra {
+        width: 350px;
+    }
+    .contenedor-silabas {
+        padding-top: 16px;
+    }
+    .ejercicio .contenedor-respuesta p {
+        font-size: 1.5rem;
+    }
+}

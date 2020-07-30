@@ -1,0 +1,38 @@
+h5 {
+    width: 80%;
+}
+
+.oracion h4 {
+    text-align: center;
+    color: #20bcdb;
+}
+.contenedor-two{
+    width: 80%;
+    margin: auto;
+    padding-top: 6vh;
+    display: grid;
+    grid-template-columns: 2fr;
+}
+.contenedor-check{
+    width: 60%;
+    font-size: 24px;
+    margin: 20px 10px;
+    text-align: center;
+}
+.contenedor-oraciones{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.image{
+    text-align: center;
+}
+.image img{
+    width: 400px;
+}
+@media(max-width: 1450px) {
+    .contenedor-check{
+        width: 60%;
+        font-size: 24px;
+        margin: 20px 10px;
+    }
+}

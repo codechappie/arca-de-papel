@@ -1,0 +1,93 @@
+.container-two {
+    margin: 0 auto;
+    width: 80%;
+    height: 68%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/****** Estilos generales ******/
+
+.grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.option {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 1vh;
+}
+
+.seleccion {
+    /* border: 1px solid darkolivegreen; */
+    border-radius: 50%;
+    margin: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.bn {
+    border: none;
+    pointer-events: none;
+    cursor: none;
+}
+
+.img {
+    width: 140px;
+    height: auto;
+}
+
+.principal {
+    width: auto;
+    height: 388px;
+    margin: auto;
+    margin-right: 10vh;
+}
+
+@media (min-width: 1920px) {
+    .seleccion {
+        width: 60px;
+        height: 60px;
+        font-size: 3em;
+    }
+    .img {
+        width: 160px;
+        height: auto;
+    }
+    .principal {
+        width: auto;
+        height: 400px;
+        margin: auto;
+        margin-right: 10vh;
+    }
+}
+
+h5 {
+    width: 80%;
+    font-size: 24px;
+}

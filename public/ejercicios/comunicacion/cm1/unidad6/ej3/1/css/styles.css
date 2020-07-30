@@ -1,0 +1,110 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 80%;
+}
+.mt80 {
+    margin-top: 10vh;
+  }
+.abecedario{
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+}
+  table.crucigrama2 {
+    width: auto;
+    display: table;
+  }
+  table.crucigrama2 tr {
+      border: none;
+  }
+  table.crucigrama2 tr td {
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    width: 30px !important;
+    height: 30px !important;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  table.crucigrama2 tr td strong {
+    color: #FFFFFF;
+    width: 37px;
+    height: 30px;
+    padding-top: 9px;
+    display: inline-block;
+    background-color: #37D3F7;
+  }
+  table.crucigrama2 tr td div {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #37D3F7;
+    padding: 0px;
+    text-align: center;
+    margin: 1px;
+    border-radius: 12px;
+    /* background: #B6ECFF; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 1.3em;
+  }
+  table.crucigrama2 tr td div:hover {
+    cursor: pointer;
+  }
+  .campo {
+    padding: 10px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .campo-img {
+    display: inline-block;
+    padding: 0 20px;
+  }
+  .campo-img span {
+    color: #0095DA;
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  .campo img {
+    width: 80px;
+    height: auto;
+  }
+  @media screen and (max-width: 1400px){
+    .campo img {
+      width: auto;
+      height: 60px;
+    }
+    table.crucigrama2 tr td div{
+      height: 36px;
+      width: 36px;
+    }
+    .mt80{
+      margin-top: 0vh;
+    } 
+  }
+  .letras span{
+    text-transform:capitalize;
+    font-size:25px;
+    position:relative;
+    float:left;
+    margin-right:2px;
+    margin-top:2px;
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /*background:#848884;*/
+    border: 2px solid #37D3F7;
+    transition: all .2s;
+  }
+  .letras span:hover {
+    cursor: pointer;
+    background: #B6ECFF;
+  }
+  .abecedario {
+    margin-top: 3vh;
+  }

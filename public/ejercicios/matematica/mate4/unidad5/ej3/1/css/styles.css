@@ -1,0 +1,144 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicio {
+    width: 70%;
+    margin: auto;
+}
+
+.recta-container {
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+
+.item {
+    width: 40px;
+    height: 80px;
+    border: 1px solid silver;
+    position: absolute;
+    bottom: 75;
+}
+
+.item.uno {
+    left: 60px;
+}
+
+.item.dos {
+    left: 130px;
+}
+
+.item.tres {
+    left: 200px;
+}
+
+.item.cuatro {
+    left: 268px;
+}
+
+.item.cinco {
+    left: 336px;
+}
+
+.item.seis {
+    left: 405px;
+}
+
+.item.siete {
+    left: 473px;
+}
+
+.item.ocho {
+    left: 543px;
+}
+
+.item.nueve {
+    left: 612px;
+}
+
+.item.diez {
+    left: 680px;
+}
+
+.item.once {
+    left: 748px;
+}
+
+.item.doce {
+    left: 816px;
+}
+
+.xxs {
+    width: 875px;
+    margin-left: -12px;
+    height: 62px;
+    background-image: url(../img/1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-color: transparent;
+}
+
+.fracciones {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    border-radius: 12px;
+}
+
+.fraccion {
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.recta-container {
+    padding-top: 100px;
+}
+
+.itemx.bt {
+    border-top: 2px solid cornflowerblue;
+}
+
+@media(max-width: 1550px) {
+    .contenedor-palabras {
+        padding-top: 25px;
+    }
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicio {
+        padding-top: 0px;
+    }
+    .contenedor-x {
+        height: 240px;
+    }
+    .contenedor-palabras {
+        padding-top: 20px;
+        width: 80%;
+        text-align: center;
+    }
+    span.palabra {
+        font-size: 1.6rem;
+        padding: 3px 8px;
+        margin: 1px 3px;
+    }
+}

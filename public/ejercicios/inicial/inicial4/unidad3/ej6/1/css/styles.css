@@ -1,0 +1,58 @@
+h5 {
+    width: 80%;
+}
+
+.container {
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor img {
+    width: 45%;
+}
+
+.contenedor-ejercicios {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contenedor-img {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid silver;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.contenedor-img img {
+    width: 95%;
+    max-height: 95%;
+}
+
+
+/************/
+
+
+/**************/
+
+@media(max-height: 640px) {
+    .contenedor-img {
+        width: 150px;
+        height: 150px;
+    }
+}

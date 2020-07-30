@@ -1,0 +1,95 @@
+        h4 {
+            text-align: center;
+        }
+        
+        h5 {
+            width: 80%;
+        }
+        
+        .row .img {
+            text-align: center;
+            padding-top: 20px;
+        }
+        
+        .row .img span {
+            display: inline-flex;
+            padding: 5px 10px;
+            border: 3px solid silver;
+            background-color: rgb(58, 110, 179);
+            border-radius: 12px;
+            color: white;
+            font-size: 1.7rem;
+            font-weight: 700;
+        }
+        
+        .contenedor-ejercicio {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .contenedor-frutas {
+            width: 33%;
+            text-align: center;
+            padding-top: 20px;
+        }
+        
+        .contenedor-frutas .fruta {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            border: 3px solid silver;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .contenedor-frutas .fruta:hover {
+            border-color: #37D3F7;
+        }
+        
+        .contenedor-frutas .fruta img {
+            max-width: 100%;
+            max-height: 100%;
+            
+            width: 80px;
+        }
+        
+        .contenedor-respuesta {
+            padding-top: 15px;
+        }
+        
+        .contenedor-respuesta span {
+            display: inline-flex;
+            padding: 5px 10px;
+            border: 3px solid silver;
+            border-radius: 12px;
+            font-size: 1.7rem;
+            font-weight: 700;
+        }
+        /************/
+        /**************/
+        
+        @media(max-height: 640px) {
+            .row {
+                display: flex;
+                align-items: center;
+            }
+            .row .img {
+                width: 30%;
+            }
+            .row .contenedor-ejercicio {
+                width: 70%;
+            }
+            .contenedor-frutas {
+                display: flex;
+            }
+            .contenedor-frutas .fruta {
+                width: 160px;
+                height: 160px;
+            }
+            .contenedor-respuesta span {
+                margin: 2;
+            }
+        }

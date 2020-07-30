@@ -1,0 +1,146 @@
+h5 {
+    width: 85%;
+}
+
+.oracion h4 {
+    text-align: center;
+    color: #20bcdb;
+}
+
+.contenedor-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedor-oraciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+}
+.oracion {
+    /* width: 100%; */
+    padding-top: 15px;
+}
+
+.contenedor-check {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+.seleccion {
+    margin: 1vh;
+    /* border: 1px solid silver; */
+    /* width: 150px; */
+    height: 75px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 1.5em;
+}
+.seleccion span {
+    color: tomato;
+    margin-right: 1vh;
+    margin-left: 1vh;
+}
+.contenedor-check .respuesta {
+    width: 80%;
+    padding: 10px 25px;
+    margin: 5px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.contenedor-check .respuesta:hover {
+    border-color: #20bcdb;
+}
+
+.contenedor-check .respuesta span {
+    font-size: 2rem;
+}
+.item{
+    display: grid;
+    grid-template-columns: 4fr;
+    align-items: center;
+}
+.options{
+    align-self: center;
+}
+.options > div{
+    height: 40px;
+    border: 2px solid rgb(63, 69, 73);
+}
+.seleccion{
+    display: grid;
+    justify-items: center;
+}
+span.celeste {
+    color: #37d3f7;
+}
+.image{
+    display: grid;
+    justify-self: center;
+}
+.image img{
+    height: 170px;
+}
+.options{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    font-size: 10px;
+}
+.options > div {
+    padding: 10px;
+}
+/************/
+
+
+/**************/
+
+@media(max-height: 780px) {
+    h4 {
+        font-size: 1.8rem;
+    }.contenedor-two {
+        height: 50%;
+    }
+    .contenedor-oraciones {
+        width: 86%;
+        padding-top: 0;
+    }
+    .contenedor-check {
+        padding-top: 0;
+    }
+    .oracion h5 {
+        font-size: 1.6rem;
+        padding-top: 0;
+    }
+    .contenedor-check .respuesta {
+        width: 80%;
+        padding: 6px 15px;
+    }
+    .contenedor-check .respuesta span {
+        font-size: 1.5rem;
+    }
+    .options{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .image img{
+        height: 87px;
+    }
+    .options{
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        font-size: 8px;
+    }
+    .options > div {
+        padding: 10px;
+    }
+}

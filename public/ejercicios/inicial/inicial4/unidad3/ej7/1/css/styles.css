@@ -1,0 +1,82 @@
+h5 {
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.ejercicio {
+    width: 45%;
+    display: flex;
+    padding: 10px;
+}
+
+.ejercicio .imagen {
+    width: 50%;
+}
+
+.ejercicio .imagen img {
+    max-width: 90%;
+    margin: auto;
+}
+
+.palabra {
+    display: flex;
+    align-items: center;
+}
+
+.palabra p {
+    font-size: 1.8rem;
+}
+
+p span select {
+    color: rgb(29, 131, 214);
+    text-align: center;
+}
+
+p span select option {
+    text-align: center;
+}
+
+p span {
+    color: tomato;
+    font-weight: 700;
+}
+
+p span.selectx {
+    display: inline-flex;
+    width: 60px;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicios {
+        width: 90%;
+        padding-top: 0px;
+    }
+    .contenedor-ejercicios .ejercicio {
+        padding: 0px 0;
+    }
+    .ejercicio select {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .ejercicio .imagen img {
+        max-height: 170px;
+    }
+}

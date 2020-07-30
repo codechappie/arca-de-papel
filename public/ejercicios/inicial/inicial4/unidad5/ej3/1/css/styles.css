@@ -1,0 +1,77 @@
+h5 {
+    width: 80%;
+}
+
+.container {
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.contenedorx {
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-ejercicios {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contenedor-img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 22px;
+    color: tomato;
+}
+
+.contenedor-imagen {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contenedor-imagen .img {
+    width: 140px;
+    height: 190px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.img img {
+    max-width: 95%;
+    max-height: 95%;
+}
+
+
+/************/
+
+
+/**************/
+
+@media(max-height: 640px) {
+    .contenedor-img {
+        width: 200px;
+        height: 200px;
+    }
+    .contenedor-imagen .img {
+        width: 130px;
+        height: 150px;
+    }
+}

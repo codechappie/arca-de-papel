@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arca de Papel</title>
+  <!-- CSS  -->
+  <style type="text/css">
+    h4 {
+        text-align: center;
+    }
+    
+    #listA {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #palabras {
+        padding: 50px;
+    }
+    
+    #palabras li {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2vh;
+        margin-right: 1px;
+    }
+    
+    @media (min-width: 600px) {
+        #palabras li {
+            width: 40%;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        #palabras li {
+            width: 20%;
+        }
+    }
+    .muestra {
+        width: 100px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    .box img {
+        width: 50%;
+        height: auto;
+    }
+    
+    .box:hover {
+        border: 3px solid #37D3F7;
+    }
+  </style>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://plataforma.arcadepapel.net/css/materialize.css" type="text/css" rel="stylesheet"
+    media="screen,projection" />
+  <link rel="stylesheet" href="https://plataforma.arcadepapel.net/css/core.css">
+  <link rel="stylesheet" type="text/css" href="https://plataforma.arcadepapel.net/view/comunicacion/1/unidad.css">
+  <link rel="stylesheet" href="https://plataforma.arcadepapel.net/js/ui/jquery-ui.min.css">
+  <script src="https://plataforma.arcadepapel.net/js/jquery-3.4.1.min.js"></script>
+  <script src="https://plataforma.arcadepapel.net/js/ui/jquery-ui.min.js"></script>
+  <script src="https://plataforma.arcadepapel.net/js//ui/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+  <style type="text/css">
+    .ftitle {
+      font-size: 1rem;
+      padding-top: 30px;
+    }
+
+    .ftitulo span {
+      color: #0095DA !important;
+    }
+  </style>
+  <script type="text/javascript">
+    var count = 3;
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://plataforma.arcadepapel.net/view/comunicacion/1/0/1/css/force-lastcape.css">
+</head>
+<div style="transform: translate(0vw, -13vh);
+  color: white;" id="resolucion"></div>
+<img class="logoUnidad">
+<script>$('.logoUnidad').attr("src", "https://plataforma.arcadepapel.net/img/unidades/0.png");</script>
+
+<body>
+
+  <audio id="click" src="https://plataforma.arcadepapel.net/asset/cursor/sound/click.mp3"></audio>
+  <audio id="bien" src="https://plataforma.arcadepapel.net/view/tools/sound/bien.mp3">
+  </audio>
+  <audio id="fallo" src="https://plataforma.arcadepapel.net/view/tools/sound/fallo.mp3">
+  </audio>
+  <div id="vertical"></div>
+   
+
+  <div class="ftitle" id="ftitle"></div>
+  <!-- REMPLAZAMOS ESTE FRAGMENTO POR EL EJERCICIO CORRESPONDIENTE -->
+  
+  <div class="container">
+    <div class="content">
+        <ul id="tabs-swipe-demo" class="tabs">
+            <li class="tab col s3"><a class="active" href="#test-swipe-1">Problema 1</a></li>
+            <li class="tab col s3"><a href="#test-swipe-2">Problema 2</a></li>
+        </ul>
+        <div id="test-swipe-1" class="col s12">
+            <div class="dato">
+                <p>En un rectángulo, la razón entre su largo y su ancho es de 7 a 4. Si el largo del rectángulo mide 35 m, ¿cuántos metros mide el ancho?</p>
+            </div>
+            <div class="resol">
+                <div class="frac">
+                    <div class="fila">Largo <i class="small material-icons red-text">arrow_forward</i> </div>
+                    <div class="fila">Ancho <i class="small material-icons red-text">arrow_forward</i></div>
+                </div>
+                <div class="frac">
+                    <div class="fila"><span class="linea">7</span></div>
+                    <div class="fila"><span>4</span></div>
+                </div>
+                <div class="frac">
+                    <div class="fila"><span>=</span></div>
+                    <div class="fila"><span>=</span></div>
+                </div>
+                <div class="frac">
+                    <div class="fila"><span class="linea">35 m</span></div>
+                    <div class="fila"><span>x</span></div>
+                </div>
+                <div>
+                    <span class="red-text espacio">⇒</span>
+                </div>
+                <div class="frac">
+                    <div class="fila">
+                        <span>
+                            <select class="browser-default seleccion" alt="n">
+                                <option value="" disabled selected></option>
+                                <option value="x">5</option>
+                                <option value="x">6</option>
+                                <option value="n">7</option>
+                                <option value="x">8</option>
+                            </select>
+                        </span>
+                        <span>× x = 35 ×</span>
+                        <span>
+                            <select class="browser-default seleccion" alt="n">
+                                <option value="" disabled selected></option>
+                                <option value="x">2</option>
+                                <option value="x">3</option>
+                                <option value="n">4</option>
+                                <option value="x">5</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div class="fila">
+                        <span class="fio">x =</span>
+                        <span>
+                            <select class="browser-default seleccion srt" alt="n">
+                                <option value="" disabled selected></option>
+                                <option value="x">22</option>
+                                <option value="x">23</option>
+                                <option value="n">20</option>
+                                <option value="x">24</option>
+                            </select>
+                        </span>
+                        <span>m</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="fil">
+                    <span>∴ El ancho mide</span> <span><select class="browser-default seleccion" alt="n">
+                            <option value="" disabled selected></option>
+                            <option value="x">22</option>
+                            <option value="x">23</option>
+                            <option value="n">20</option>
+                            <option value="x">25</option>
+                        </select></span><span> m.</span>
+                </div>
+
+            </div>
+        </div>
+        <div id="test-swipe-2" class="col s12">
+            <div class="dato">
+                <p class="sinma">En un corral, la razón entre el número de gallinas y pavos es de
+                    5 a 3. Si hay 48 gallinas, ¿cuántos pavos hay?</p>
+            </div>
+            <div class="resol">
+                <div class="frac">
+                    <div class="fila linea">G </div>
+                    <div class="fila">P </div>
+                </div>
+                <div>=</div>
+                <div class="frac">
+                    <div class="fila">
+                        <span class="linea fil">
+                            <span>
+                                <select class="browser-default seleccion" alt="n">
+                                    <option value="" disabled selected></option>
+                                    <option value="x">3</option>
+                                    <option value="x">4</option>
+                                    <option value="n">5</option>
+                                    <option value="x">6</option>
+                                </select>
+                            </span>
+                            <span>· k</span>
+                        </span>
+                    </div>
+                    <div class="fila"><span class="fil">
+                            <span>
+                                <select class="browser-default seleccion" alt="n">
+                                    <option value="" disabled selected></option>
+                                    <option value="x">5</option>
+                                    <option value="x">4</option>
+                                    <option value="n">3</option>
+                                    <option value="x">6</option>
+                                </select>
+                            </span>
+                            <span>· k</span>
+                        </span></div>
+                </div>
+                <div class="espacio">
+
+                </div>
+                <div class="frac">
+                    <div class="fil">
+                        <span>
+                            <select class="browser-default seleccion" alt="n">
+                                <option value="" disabled selected></option>
+                                <option value="x">3</option>
+                                <option value="x">4</option>
+                                <option value="n">5</option>
+                                <option value="x">6</option>
+                            </select>
+                        </span>
+                        <span>k + </span>
+                        <span>
+                            <select class="browser-default seleccion" alt="n">
+                                <option value="" disabled selected></option>
+                                <option value="x">5</option>
+                                <option value="x">4</option>
+                                <option value="n">3</option>
+                                <option value="x">6</option>
+                            </select>
+                        </span>
+                        <span>k = 48 </span>
+                    </div>
+                    <div class="fil">
+                        <span>
+                            <select class="browser-default seleccion" alt="n">
+                                <option value="" disabled selected></option>
+                                <option value="x">6</option>
+                                <option value="x">7</option>
+                                <option value="n">8</option>
+                                <option value="x">9</option>
+                            </select>
+                        </span>
+                        <span>k = 48</span>
+                    </div>
+                    <div class="fil">
+                        <span>k =</span>
+                        <span>
+                            <select class="browser-default seleccion" alt="n">
+                                <option value="" disabled selected></option>
+                                <option value="x">4</option>
+                                <option value="x">5</option>
+                                <option value="n">6</option>
+                                <option value="x">7</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="fil">
+                    <span>⇒ N.° pavos = </span>
+                    <span>
+                        <select class="browser-default seleccion" alt="n">
+                            <option value="" disabled selected></option>
+                            <option value="x">1</option>
+                            <option value="x">2</option>
+                            <option value="n">3</option>
+                            <option value="x">4</option>
+                        </select>
+                    </span>
+                    <span> × </span>
+                    <span>
+                        <select class="browser-default seleccion" alt="n">
+                            <option value="" disabled selected></option>
+                            <option value="x">4</option>
+                            <option value="x">5</option>
+                            <option value="n">6</option>
+                            <option value="x">7</option>
+                        </select>
+                    </span>
+                    <span> = </span>
+                    <span>
+                        <select class="browser-default seleccion" alt="n">
+                            <option value="" disabled selected></option>
+                            <option value="x">15</option>
+                            <option value="x">17</option>
+                            <option value="n">18</option>
+                            <option value="x">16</option>
+                        </select>
+                    </span>
+                    <span class="minesp"></span>
+                    <span>∴ El ancho mide</span> <span><select class="browser-default seleccion" alt="n">
+                            <option value="" disabled selected></option>
+                            <option value="x">15</option>
+                            <option value="x">17</option>
+                            <option value="n">18</option>
+                            <option value="x">16</option>
+                        </select></span><span> m.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+  <!-- REMPLAZAMOS ESTE FRAGMENTO POR EL EJERCICIO CORRESPONDIENTE -->
+
+
+  </section>
+  <div id="modal1" style="display: none;" class="modal">
+    <div class="modal-content">
+      <h4>Respuesta correcta</h4>
+      <center>
+        <img class="materialboxed" width="80%" src="./img/respuesta.png">
+      </center>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+    </div>
+  </div>
+  <div id="ventana"></div>
+  <div id="correcto" class="modal">
+    <div class="modal-content">
+      <center>
+        <h4>Respuesta correcta <i class="material-icons">sentiment_very_satisfied</i></h4>
+      </center>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-close waves-effect waves-green btn-flat">Listo!</a>
+    </div>
+  </div>
+  <div id="incorrecto" class="modal">
+    <div class="modal-content">
+      <center>
+        <h4>Respuesta Incorrecta <i class="material-icons">sentiment_very_dissatisfied</i></h4>
+      </center>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+    </div>
+  </div>
+  <script src="https://plataforma.arcadepapel.net/js/materialize.min.js"></script>
+  <script src="https://plataforma.arcadepapel.net/js/core.js"></script>
+  <center>
+    <div class="botones">
+      <a title="Ver Respuesta" class="modal-trigger tooltipped" href="#modal1">
+        <div class="btn red pulse btn-floating fixed-action-btn tooltipped" data-position="left"
+          data-tooltip="Ver Respuesta Correcta" id="respuesta">
+          <i class="material-icons">assignment_turned_in</i></div>
+      </a>
+      <div class="btn  btn-floating  btn-small  btn-intentos tooltipped" data-position="top"
+        data-tooltip="Intentos restantes" id="intentos">3</div>
+      <div class="btnEnviar btn-small center" value="" id="boton1" onclick="">Enviar Respuesta</div>
+      <div class="btnCorregir btn-small center" value="" onclick="window.location.reload()">Reiniciar</div>
+      <a class="btn-small btnSiguiente center disabled" id="nextExercise" href="">Siguiente</a>
+    </div>
+  </center>
+
+  <script src="./js/validate.js"></script>
+
+</body>
+
+</html>

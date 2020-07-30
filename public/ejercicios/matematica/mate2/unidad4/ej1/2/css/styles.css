@@ -1,0 +1,83 @@
+.container-two {
+  padding-top: 4vh;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.image{
+  text-align: center;
+}
+.image img{
+  width: 800px;
+}
+.filaproblema{
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: 600;
+  font-size: 24px;
+}
+.filaproblema > div {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.rojo{
+  color: red;
+}
+
+
+
+/*SELECT*/
+.select-wrapper input.select-dropdown {
+  border: 1px solid silver;
+  width: 150px;
+  margin: 12px 0px;
+  font-weight: 400;
+  font-size: 24px;
+  height: 40px;
+}
+
+.select-wrapper input.select-dropdown:focus {
+  border-bottom: 1px solid silver;
+}
+
+.select-wrapper ul {
+  height: auto;
+}
+
+.select-wrapper {
+  position: relative;
+  margin-left: .5vh;
+  margin-right: .5vh;
+}
+
+.dropdown-content {
+  background-color: #fff;
+  margin: 0;
+  display: none;
+  min-width: 20px;
+  overflow-y: auto;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  width: 10px;
+  border-radius: 12px;
+}
+@media screen and (max-height: 700px){
+  .container-two {
+    padding-top: 10px;
+  }
+  .image img{
+     width: 550px;
+  }
+}

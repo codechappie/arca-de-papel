@@ -1,0 +1,62 @@
+h5 {
+    width: 80%;
+}
+
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor img {
+    width: auto;
+    height: 280px;
+    margin: 5vh;
+}
+
+.contenedor-ejercicios {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.contenedor-img img {
+    width: 95%;
+    max-height: 95%;
+}
+
+@media(max-height: 640px) {
+    .contenedor-img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.principal {
+    width: 100%;
+    height: auto;
+}

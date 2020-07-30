@@ -1,0 +1,166 @@
+h4 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 80%;
+    margin: auto;
+}
+
+.contenedor-ejercicios {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.ejercicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ejercicio .imagen-palabra {
+    width: 450px;
+    display: flex;
+    padding-top: 35px;
+    justify-content: center;
+}
+
+.ejercicio .imagen-palabra img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.ejercicio .contenedor-respuesta {
+    width: fit-content;
+    padding: 20px;
+}
+
+.ejercicio .contenedor-respuesta p {
+    width: fit-content;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.ejercicio .contenedor-respuesta p span.palabra {
+    display: inline-flex;
+    width: 130px;
+    height: 50px;
+    border: 3px solid tomato;
+    border-radius: 12px;
+    margin: 5px;
+    color: transparent;
+}
+
+.ejercicio .contenedor-respuesta.x {
+    position: relative;
+}
+
+.ejercicio .contenedor-respuesta.x::after {
+    position: absolute;
+    content: 'Ramón Campoamor';
+    color: rgb(194, 4, 194);
+    bottom: -30px;
+    font-size: 1.7rem;
+    right: 0;
+}
+
+span.celeste {
+    color: #37d3f7;
+}
+
+span.imagen {
+    display: inline-flex;
+    border: 3px solid silver;
+    border-radius: 12px;
+    padding: 3px 8px;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    align-items: center;
+    margin: 5px;
+}
+
+
+/************/
+
+.contenedor-silabas {
+    display: inline-flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-left: 5%;
+    flex-wrap: wrap;
+}
+
+.contenedor-silabas .silabas {
+    margin: 0px 5px;
+}
+
+.silabas h4 {
+    display: inline-block;
+    font-size: 1.8rem;
+    background-color: #37D3F7;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 12px;
+}
+
+.palabrax h4 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/**************/
+
+@media(max-height: 640px) {
+    .container .row {
+        display: flex;
+    }
+    .contenedor-ejercicios {
+        padding-top: 0;
+    }
+    .ejercicio {
+        justify-content: flex-start;
+    }
+    .ejercicio .contenedor-respuesta {
+        width: 50%;
+        padding: 10px;
+    }
+    .ejercicio .contenedor-respuesta.x {
+        width: fit-content;
+    }
+    .ejercicio .contenedor-respuesta.x::after {
+        bottom: 40%;
+        right: -50%;
+    }
+    .contenedor-imagenes {
+        width: 25%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ejercicio .contenedor-respuesta p {
+        font-size: 1.6rem;
+    }
+}
